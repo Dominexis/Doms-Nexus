@@ -1,4 +1,4 @@
-# Dom-s-Nexus
+# Dom's Nexus
 Dom's Nexus is a data pack library and framework designed to make Minecraft mapmaking easier and more streamlined, and to introduce various functions to allow for very sophisticated mechanics.
 
 Attached are four packs, the main Dom's Nexus data pack, the External Time Measurer data pack, the Template Module data pack, and the Template Module resource pack, each serving its own purpose.
