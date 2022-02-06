@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "#nexus:motion/destructible/class/fragile",
+        "#nexus:motion/destructible/class/pliable"
+    ]
+}

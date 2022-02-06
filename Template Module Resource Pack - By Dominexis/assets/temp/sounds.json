@@ -1,0 +1,17 @@
+{
+	"entity.racecar.in": {
+		"sounds": [
+			"temp:entity/racecar/in"
+		]
+	},
+	"entity.racecar.drive": {
+		"sounds": [
+			"temp:entity/racecar/drive"
+		]
+	},
+	"entity.racecar.out": {
+		"sounds": [
+			"temp:entity/racecar/out"
+		]
+	}
+}

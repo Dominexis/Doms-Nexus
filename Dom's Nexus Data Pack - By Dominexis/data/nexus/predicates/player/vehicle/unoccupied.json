@@ -1,0 +1,28 @@
+[
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "vehicle": {
+                "type": "#nexus:generic/vehicle",
+                "team": "nexus.vehicle"
+            }
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "vehicle": {
+                    "type": "#nexus:generic/vehicle",
+                    "team": "nexus.vehicle",
+                    "effects": {
+                        "minecraft:luck": {}
+                    }
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,7 @@
+{
+    "values": [
+        "#nexus:generic/system",
+        "#temp:generic/damage_sensor",
+        "minecraft:skeleton_horse"
+    ]
+}

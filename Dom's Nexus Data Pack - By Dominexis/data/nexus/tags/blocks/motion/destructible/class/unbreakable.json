@@ -1,0 +1,15 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:barrier",
+        "minecraft:bedrock",
+        "minecraft:chain_command_block",
+        "minecraft:command_block",
+        "minecraft:end_gateway",
+        "minecraft:end_portal",
+        "minecraft:end_portal_frame",
+        "minecraft:jigsaw",
+        "minecraft:repeating_command_block",
+        "minecraft:structure_block"
+    ]
+}

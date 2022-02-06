@@ -1,0 +1,652 @@
+{
+    "criteria": {
+        "bit_00.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_00.0\"]}"
+                }
+            }
+        },
+        "bit_01.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_01.0\"]}"
+                }
+            }
+        },
+        "bit_02.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_02.0\"]}"
+                }
+            }
+        },
+        "bit_03.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_03.0\"]}"
+                }
+            }
+        },
+        "bit_04.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_04.0\"]}"
+                }
+            }
+        },
+        "bit_05.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_05.0\"]}"
+                }
+            }
+        },
+        "bit_06.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_06.0\"]}"
+                }
+            }
+        },
+        "bit_07.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_07.0\"]}"
+                }
+            }
+        },
+        "bit_08.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_08.0\"]}"
+                }
+            }
+        },
+        "bit_09.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_09.0\"]}"
+                }
+            }
+        },
+        "bit_10.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_10.0\"]}"
+                }
+            }
+        },
+        "bit_11.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_11.0\"]}"
+                }
+            }
+        },
+        "bit_12.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_12.0\"]}"
+                }
+            }
+        },
+        "bit_13.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_13.0\"]}"
+                }
+            }
+        },
+        "bit_14.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_14.0\"]}"
+                }
+            }
+        },
+        "bit_15.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_15.0\"]}"
+                }
+            }
+        },
+        "bit_16.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_16.0\"]}"
+                }
+            }
+        },
+        "bit_17.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_17.0\"]}"
+                }
+            }
+        },
+        "bit_18.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_18.0\"]}"
+                }
+            }
+        },
+        "bit_19.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_19.0\"]}"
+                }
+            }
+        },
+        "bit_20.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_20.0\"]}"
+                }
+            }
+        },
+        "bit_21.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_21.0\"]}"
+                }
+            }
+        },
+        "bit_22.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_22.0\"]}"
+                }
+            }
+        },
+        "bit_23.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_23.0\"]}"
+                }
+            }
+        },
+        "bit_24.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_24.0\"]}"
+                }
+            }
+        },
+        "bit_25.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_25.0\"]}"
+                }
+            }
+        },
+        "bit_26.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_26.0\"]}"
+                }
+            }
+        },
+        "bit_27.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_27.0\"]}"
+                }
+            }
+        },
+        "bit_28.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_28.0\"]}"
+                }
+            }
+        },
+        "bit_29.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_29.0\"]}"
+                }
+            }
+        },
+        "bit_30.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_30.0\"]}"
+                }
+            }
+        },
+        "bit_31.0": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_31.0\"]}"
+                }
+            }
+        },
+
+
+
+        "bit_00.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_00.1\"]}"
+                }
+            }
+        },
+        "bit_01.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_01.1\"]}"
+                }
+            }
+        },
+        "bit_02.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_02.1\"]}"
+                }
+            }
+        },
+        "bit_03.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_03.1\"]}"
+                }
+            }
+        },
+        "bit_04.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_04.1\"]}"
+                }
+            }
+        },
+        "bit_05.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_05.1\"]}"
+                }
+            }
+        },
+        "bit_06.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_06.1\"]}"
+                }
+            }
+        },
+        "bit_07.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_07.1\"]}"
+                }
+            }
+        },
+        "bit_08.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_08.1\"]}"
+                }
+            }
+        },
+        "bit_09.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_09.1\"]}"
+                }
+            }
+        },
+        "bit_10.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_10.1\"]}"
+                }
+            }
+        },
+        "bit_11.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_11.1\"]}"
+                }
+            }
+        },
+        "bit_12.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_12.1\"]}"
+                }
+            }
+        },
+        "bit_13.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_13.1\"]}"
+                }
+            }
+        },
+        "bit_14.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_14.1\"]}"
+                }
+            }
+        },
+        "bit_15.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_15.1\"]}"
+                }
+            }
+        },
+        "bit_16.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_16.1\"]}"
+                }
+            }
+        },
+        "bit_17.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_17.1\"]}"
+                }
+            }
+        },
+        "bit_18.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_18.1\"]}"
+                }
+            }
+        },
+        "bit_19.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_19.1\"]}"
+                }
+            }
+        },
+        "bit_20.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_20.1\"]}"
+                }
+            }
+        },
+        "bit_21.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_21.1\"]}"
+                }
+            }
+        },
+        "bit_22.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_22.1\"]}"
+                }
+            }
+        },
+        "bit_23.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_23.1\"]}"
+                }
+            }
+        },
+        "bit_24.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_24.1\"]}"
+                }
+            }
+        },
+        "bit_25.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_25.1\"]}"
+                }
+            }
+        },
+        "bit_26.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_26.1\"]}"
+                }
+            }
+        },
+        "bit_27.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_27.1\"]}"
+                }
+            }
+        },
+        "bit_28.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_28.1\"]}"
+                }
+            }
+        },
+        "bit_29.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_29.1\"]}"
+                }
+            }
+        },
+        "bit_30.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_30.1\"]}"
+                }
+            }
+        },
+        "bit_31.1": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"nexus.entity.id.bit_31.1\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "bit_00.0",
+            "bit_00.1"
+        ],
+        [
+            "bit_01.0",
+            "bit_01.1"
+        ],
+        [
+            "bit_02.0",
+            "bit_02.1"
+        ],
+        [
+            "bit_03.0",
+            "bit_03.1"
+        ],
+        [
+            "bit_04.0",
+            "bit_04.1"
+        ],
+        [
+            "bit_05.0",
+            "bit_05.1"
+        ],
+        [
+            "bit_06.0",
+            "bit_06.1"
+        ],
+        [
+            "bit_07.0",
+            "bit_07.1"
+        ],
+        [
+            "bit_08.0",
+            "bit_08.1"
+        ],
+        [
+            "bit_09.0",
+            "bit_09.1"
+        ],
+        [
+            "bit_10.0",
+            "bit_10.1"
+        ],
+        [
+            "bit_11.0",
+            "bit_11.1"
+        ],
+        [
+            "bit_12.0",
+            "bit_12.1"
+        ],
+        [
+            "bit_13.0",
+            "bit_13.1"
+        ],
+        [
+            "bit_14.0",
+            "bit_14.1"
+        ],
+        [
+            "bit_15.0",
+            "bit_15.1"
+        ],
+        [
+            "bit_16.0",
+            "bit_16.1"
+        ],
+        [
+            "bit_17.0",
+            "bit_17.1"
+        ],
+        [
+            "bit_18.0",
+            "bit_18.1"
+        ],
+        [
+            "bit_19.0",
+            "bit_19.1"
+        ],
+        [
+            "bit_20.0",
+            "bit_20.1"
+        ],
+        [
+            "bit_21.0",
+            "bit_21.1"
+        ],
+        [
+            "bit_22.0",
+            "bit_22.1"
+        ],
+        [
+            "bit_23.0",
+            "bit_23.1"
+        ],
+        [
+            "bit_24.0",
+            "bit_24.1"
+        ],
+        [
+            "bit_25.0",
+            "bit_25.1"
+        ],
+        [
+            "bit_26.0",
+            "bit_26.1"
+        ],
+        [
+            "bit_27.0",
+            "bit_27.1"
+        ],
+        [
+            "bit_28.0",
+            "bit_28.1"
+        ],
+        [
+            "bit_29.0",
+            "bit_29.1"
+        ],
+        [
+            "bit_30.0",
+            "bit_30.1"
+        ],
+        [
+            "bit_31.0",
+            "bit_31.1"
+        ]
+    ],
+    "rewards": {
+        "function": "nexus:generic/event_id/entity_killed_player"
+    }
+}

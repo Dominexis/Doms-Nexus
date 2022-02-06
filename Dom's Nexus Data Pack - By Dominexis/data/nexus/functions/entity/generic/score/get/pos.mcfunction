@@ -1,0 +1,5 @@
+# Push scores
+
+scoreboard players operation #entity_x nexus.value = @s nexus.x
+scoreboard players operation #entity_y nexus.value = @s nexus.y
+scoreboard players operation #entity_z nexus.value = @s nexus.z

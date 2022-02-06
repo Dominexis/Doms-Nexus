@@ -1,0 +1,29 @@
+{
+    "parent": "minecraft:block/magenta_terracotta",
+	"overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 999901
+        },
+        "model": "temp:entity/spider_brain/main/brain"
+      },
+	  {
+        "predicate": {
+          "custom_model_data": 999902
+        },
+        "model": "temp:entity/spider_brain/main/leg"
+      },
+	  {
+        "predicate": {
+          "custom_model_data": 999911
+        },
+        "model": "temp:entity/spider_brain/damage/brain"
+      },
+	  {
+        "predicate": {
+          "custom_model_data": 999912
+        },
+        "model": "temp:entity/spider_brain/damage/leg"
+      }
+    ]
+}

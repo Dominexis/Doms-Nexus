@@ -1,0 +1,6 @@
+{
+    "replace": false,
+    "values": [
+        "temp:generic/event_id/player_hurt_entity/entity"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "parent": "minecraft:block/blue_concrete",
+	"overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 999901
+        },
+        "model": "temp:entity/racecar/racecar"
+      },
+	  {
+        "predicate": {
+          "custom_model_data": 999902
+        },
+        "model": "temp:entity/racecar/body"
+      },
+	  {
+        "predicate": {
+          "custom_model_data": 999903
+        },
+        "model": "temp:entity/racecar/wheel"
+      },
+	  {
+        "predicate": {
+          "custom_model_data": 999904
+        },
+        "model": "temp:entity/racecar/steering_wheel"
+      }
+    ]
+}

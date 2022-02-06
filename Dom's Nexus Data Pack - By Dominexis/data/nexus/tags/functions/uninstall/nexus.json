@@ -1,0 +1,6 @@
+{
+    "replace": true,
+    "values": [
+        "nexus:uninstall/main"
+    ]
+}

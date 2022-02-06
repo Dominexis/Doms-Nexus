@@ -1,0 +1,13 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "vehicle": {
+            "type": "#nexus:generic/vehicle",
+            "team": "nexus.vehicle",
+            "effects": {
+                "minecraft:luck": {}
+            }
+        }
+    }
+}

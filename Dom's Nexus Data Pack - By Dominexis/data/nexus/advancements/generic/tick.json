@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "enter_block": {
+            "trigger": "minecraft:enter_block"
+        }
+    },
+    "rewards": {
+        "function": "nexus:generic/tick_time/world_tick/verify"
+    }
+}

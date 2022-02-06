@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:block/white_concrete",
+	"overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 999901
+        },
+        "model": "temp:entity/ball"
+      }
+    ]
+}

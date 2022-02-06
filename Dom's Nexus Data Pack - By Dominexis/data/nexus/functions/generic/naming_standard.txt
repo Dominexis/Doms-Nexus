@@ -1,0 +1,5 @@
+Naming standard of generic function variables
+
+All fakeplayer variables with the terms "input", "output", or "math" will begin with the respective term.
+Functions with single inputs and/or outputs will use the standard input and output names.
+Generic functions should avoid referencing each other if it means extra commands to transfer values between scores. Functions with simple inputs and outputs are acceptable.

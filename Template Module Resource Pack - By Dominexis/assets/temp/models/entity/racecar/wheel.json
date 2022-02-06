@@ -1,0 +1,36 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "temp:entity/racecar",
+		"particle": "temp:entity/racecar"
+	},
+	"elements": [
+		{
+			"from": [-1, -0.5, -1],
+			"to": [1, 2.5, 2],
+			"faces": {
+				"north": {"uv": [5.875, 7.375, 6.125, 7.75], "texture": "#0"},
+				"east": {"uv": [5.5, 7.375, 5.875, 7.75], "texture": "#0"},
+				"south": {"uv": [6.5, 7.375, 6.75, 7.75], "texture": "#0"},
+				"west": {"uv": [6.125, 7.375, 6.5, 7.75], "texture": "#0"},
+				"up": {"uv": [6.125, 7.375, 5.875, 7], "texture": "#0"},
+				"down": {"uv": [6.375, 7, 6.125, 7.375], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [19, 10.25, 18],
+			"scale": [2.4, 2.4, 2.4]
+		}
+	},
+	"groups": [
+		{
+			"name": "features",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

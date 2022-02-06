@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "nexus:tick/verify",
+        "etm:tick/main"
+    ]
+}

@@ -1,0 +1,16 @@
+# Execute function based on score
+
+scoreboard players set #climb_state nexus.value 1
+execute if score #hitbox_y_temp nexus.value matches 00.. positioned ~ ~00 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+scoreboard players set #climb_state nexus.value 2
+execute if score #hitbox_y_temp nexus.value matches 01.. positioned ~ ~01 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+scoreboard players set #climb_state nexus.value 3
+execute if score #hitbox_y_temp nexus.value matches 02.. positioned ~ ~02 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+execute if score #hitbox_y_temp nexus.value matches 03.. positioned ~ ~03 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+execute if score #hitbox_y_temp nexus.value matches 04.. positioned ~ ~04 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+execute if score #hitbox_y_temp nexus.value matches 05.. positioned ~ ~05 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+execute if score #hitbox_y_temp nexus.value matches 06.. positioned ~ ~06 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+execute if score #hitbox_y_temp nexus.value matches 07.. positioned ~ ~07 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+execute if score #hitbox_y_temp nexus.value matches 08.. positioned ~ ~08 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+execute if score #hitbox_y_temp nexus.value matches 09.. positioned ~ ~09 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z
+execute if score #hitbox_y_temp nexus.value matches 10.. positioned ~ ~10 ~ run function nexus:entity/generic/motion/wv/check/hitbox/x/z

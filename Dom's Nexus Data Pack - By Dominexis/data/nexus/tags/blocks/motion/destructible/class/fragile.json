@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:mineable/hoe",
+        "#minecraft:candles",
+        "#minecraft:carpets",
+        "#minecraft:flower_pots",
+        "#minecraft:ice",
+        "#nexus:generic/glass",
+        "#nexus:generic/wool",
+
+        "minecraft:cactus",
+        "minecraft:cake",
+        "minecraft:glowstone",
+        "minecraft:lily_pad",
+        "minecraft:redstone_lamp",
+        "minecraft:sea_lantern",
+        "minecraft:sea_pickle",
+        "minecraft:tripwire",
+        "minecraft:turtle_egg"
+    ]
+}
