@@ -11,6 +11,8 @@ execute if score #update_installation_boolean nexus.value matches 1 run function
 # Set feature booleans
 
 scoreboard players set #feature_time_manager nexus.value 1
+scoreboard players set #feature_player_health nexus.value 1
+scoreboard players set #feature_player_respawn nexus.value 1
 scoreboard players set #feature_entity_processing nexus.value 1
 scoreboard players set #feature_custom_entity_ticking nexus.value 1
 scoreboard players set #feature_vehicle nexus.value 1

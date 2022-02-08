@@ -67,7 +67,8 @@ scoreboard objectives remove nexus.damage
 scoreboard objectives remove nexus.heal
 scoreboard objectives remove nexus.source
 scoreboard objectives remove nexus.hp_time
-scoreboard objectives remove nexus.hp_shift
+scoreboard objectives remove nexus.hp_offset
+scoreboard objectives remove nexus.hp_buffer
 
 scoreboard objectives remove nexus.abs_amount
 scoreboard objectives remove nexus.abs_level

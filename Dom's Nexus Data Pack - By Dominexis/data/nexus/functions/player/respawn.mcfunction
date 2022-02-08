@@ -1,6 +1,6 @@
 # Remove dead tag
 
-tag @s remove nexus.player.property.dead
+tag @s remove nexus.player.dead
 
 
 

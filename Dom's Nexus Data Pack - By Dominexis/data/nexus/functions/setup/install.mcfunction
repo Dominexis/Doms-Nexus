@@ -37,7 +37,9 @@ scoreboard objectives add nexus.damage dummy
 scoreboard objectives add nexus.heal dummy
 scoreboard objectives add nexus.source dummy
 scoreboard objectives add nexus.hp_time dummy
-scoreboard objectives add nexus.hp_shift dummy
+scoreboard objectives add nexus.hp_offset dummy
+scoreboard objectives add nexus.hp_buffer dummy
+scoreboard objectives add nexus.resistance dummy
 
 scoreboard objectives add nexus.abs_amount dummy
 scoreboard objectives add nexus.abs_level dummy

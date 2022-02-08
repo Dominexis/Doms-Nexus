@@ -10,4 +10,4 @@ execute unless entity @a[distance=..40,gamemode=!spectator] run function temp:en
 
 # Manage damage sensor
 
-execute unless entity @e[type=pig,distance=..4,tag=temp.entity.part.damage_sensor,tag=nexus.entity.target,scores={nexus.health=1024000},limit=1] run function temp:entity/skull/generic/damage
+execute unless entity @e[type=pig,distance=..4,tag=temp.entity.part.damage_sensor,tag=nexus.entity.target,scores={nexus.health=1024000},limit=1] run function temp:entity/skull/mode/generic/damage

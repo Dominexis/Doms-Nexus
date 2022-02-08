@@ -1,4 +1,4 @@
-# Get rotation
+# Get data
 
 data modify storage nexus:data tag set value {Rotation:[0.0f,0.0f]}
 data modify storage nexus:data tag.Rotation set from entity @s Rotation

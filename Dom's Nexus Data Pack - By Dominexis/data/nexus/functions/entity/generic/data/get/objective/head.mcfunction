@@ -1,4 +1,4 @@
-# Get rotation
+# Get data
 
 data modify storage nexus:data tag set value {Pose:{Head:[0.0f,0.0f,0.0f]}}
 data modify storage nexus:data tag.Pose.Head set from entity @s Pose.Head

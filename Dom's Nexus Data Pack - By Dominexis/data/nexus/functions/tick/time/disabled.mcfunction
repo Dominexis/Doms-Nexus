@@ -15,7 +15,7 @@ scoreboard players add #air_toggle_timer nexus.value 1
 execute if score #air_toggle_timer nexus.value matches 50.. run scoreboard players set #air_toggle_timer nexus.value 0
 
 execute if score #feature_entity_processing nexus.value matches 1 as @e[tag=!nexus.chunk,tag=!nexus.object] unless score @s nexus.modified = #global nexus.modified at @s run function nexus:entity/process/main
-execute if score #feature_entity_health nexus.value matches 1 as @e[type=#nexus:family/mob] run function nexus:entity/generic/health/main
+execute if score #feature_entity_health nexus.value matches 1 run scoreboard players remove @e[type=#nexus:family/mob,scores={nexus.hp_time=1..}] nexus.hp_time 1
 execute if score #feature_damage_sensor_ticking nexus.value matches 1 as @e[type=#nexus:generic/damage_sensor,tag=nexus.entity.damage_sensor.tick] run function nexus:entity/generic/damage_sensor/tick
 
 execute if score #entity_termination_boolean nexus.value matches 1 run function nexus:entity/generic/terminate/void

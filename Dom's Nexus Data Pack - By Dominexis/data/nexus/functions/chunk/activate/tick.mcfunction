@@ -20,7 +20,7 @@ tag @s add nexus.chunk.activated
 
 # Process chunk
 
-execute if entity @s[tag=!nexus.chunk.processed] run function nexus:chunk/activate/process
+execute unless score @s nexus.modified = #global nexus.modified run function nexus:chunk/activate/process
 
 
 
@@ -30,7 +30,7 @@ execute if entity @s[tag=!nexus.chunk.processed] run function nexus:chunk/activa
 
 # Spawn neighboring chunk markers
 
-execute at @s[tag=!nexus.chunk.neighbor,tag=nexus.chunk.processed] run function nexus:chunk/neighbor/main
+execute if score @s nexus.modified = #global nexus.modified at @s[tag=!nexus.chunk.neighbor] run function nexus:chunk/neighbor/main
 
 
 
@@ -56,4 +56,4 @@ scoreboard players operation @s nexus.ticks = #global nexus.ticks
 
 # Run ticking function
 
-execute at @s[tag=nexus.chunk.processed] run function #nexus:chunk/main
+execute if score @s nexus.modified = #global nexus.modified at @s run function #nexus:chunk/main

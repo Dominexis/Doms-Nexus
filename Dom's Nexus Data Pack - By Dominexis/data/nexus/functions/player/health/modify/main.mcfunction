@@ -1,7 +1,6 @@
 # Extract NBT
 
-execute unless score @s nexus.nbt_ticks = #global nexus.ticks run function nexus:entity/generic/data/extract/nbt
-execute store result score #health nexus.value run data get storage nexus:data tag.Health 1000
+function nexus:entity/generic/data/extract/objective
 
 
 
@@ -21,11 +20,21 @@ execute store result score #max_health nexus.value run attribute @s generic.max_
 
 # Death or assignment
 
-scoreboard players operation #goal_health nexus.value = #health nexus.value
-scoreboard players operation #goal_health nexus.value += #health_offset nexus.value
+scoreboard players operation #goal_health nexus.value = @s nexus.health
+scoreboard players operation #goal_health nexus.value += @s nexus.hp_offset
 
 execute if score #goal_health nexus.value matches ..0 run function nexus:player/health/modify/death/main
 execute if score #goal_health nexus.value matches 1.. run function nexus:player/health/modify/assign/main
+
+
+
+
+
+
+
+# Reset health offset
+
+scoreboard players set @s nexus.hp_offset 0
 
 
 

@@ -55,7 +55,7 @@ advancement revoke @s only nexus:event_id/player_hurt_entity
 # Run function as damage sensor
 
 scoreboard players operation #entity_target nexus.value = @s nexus.id
-execute if score #feature_event_id_phe nexus.value matches 1 run function nexus:entity/generic/data/extract/fakeplayer/pos_rot
+execute if score #feature_event_id_phe nexus.value matches 1 run function nexus:entity/generic/data/extract/fakeplayer/pos_mot_rot
 execute if score #feature_event_id_phe nexus.value matches 1 as @e[type=#nexus:generic/damage_sensor,tag=nexus.entity.damage_sensor.event] if score @s nexus.entity_id = #local nexus.entity_id at @s run function nexus:entity/generic/damage_sensor/event
 
 

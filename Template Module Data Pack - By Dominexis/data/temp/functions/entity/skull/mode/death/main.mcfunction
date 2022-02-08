@@ -33,4 +33,4 @@ function temp:entity/skull/mode/generic/collision
 # Manage animation
 
 scoreboard players operation @s nexus.animation -= #missed_ticks nexus.value
-execute if score @s nexus.animation matches ..0 at @s run function temp:entity/skull/generic/terminate
+execute if score @s nexus.animation matches ..0 at @s run function temp:entity/skull/mode/generic/terminate

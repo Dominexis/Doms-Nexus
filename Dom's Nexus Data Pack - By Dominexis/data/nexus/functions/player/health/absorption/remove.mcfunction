@@ -1,6 +1,6 @@
 # Subtract from health
 
-scoreboard players operation #health_offset nexus.value -= #absorption_amount nexus.value
+scoreboard players operation @s nexus.hp_offset -= #absorption_amount nexus.value
 
 
 

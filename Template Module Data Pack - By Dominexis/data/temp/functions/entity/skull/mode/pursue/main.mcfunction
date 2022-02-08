@@ -119,4 +119,8 @@ execute if score #boolean temp.value matches 1 run playsound minecraft:enchant.t
 
 # Hurt players
 
-execute at @s run scoreboard players set @a[distance=..1,gamemode=!spectator] nexus.damage 999901101
+scoreboard players set #damage_amount nexus.value 1000
+scoreboard players set #damage_source nexus.value 999900001
+scoreboard players set #damage_armor_boolean nexus.value 1
+scoreboard players set #damage_burn_boolean nexus.value 0
+execute at @s as @a[distance=..1] run function nexus:player/health/damage/verify

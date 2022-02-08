@@ -1,4 +1,4 @@
-# Get position
+# Get data
 
 data modify storage nexus:data tag set value {Pos:[0.0d,0.0d,0.0d]}
 data modify storage nexus:data tag.Pos set from entity @s Pos

@@ -18,9 +18,9 @@ data modify storage nexus:data tag set from entity @s {}
 
 
 
-# Kill if no-drop
+# Extract data
 
-execute if data storage nexus:data {tag:{Item:{tag:{nexus:{no_drop:1b}}}}} run kill @s[type=item]
+execute unless entity @s[type=!player,type=!#nexus:family/mob] store result score @s nexus.health run data get storage nexus:data tag.Health 1000
 
 
 
@@ -40,7 +40,15 @@ scoreboard players operation @s nexus.prev_yaw = @s nexus.yaw
 scoreboard players operation @s nexus.prev_pitch = @s nexus.pitch
 scoreboard players operation @s nexus.prev_roll = @s nexus.roll
 
-scoreboard players set @s nexus.hp_time 0
+
+
+
+
+
+
+# Kill if no-drop
+
+execute if data storage nexus:data {tag:{Item:{tag:{nexus:{no_drop:1b}}}}} run kill @s[type=item]
 
 
 

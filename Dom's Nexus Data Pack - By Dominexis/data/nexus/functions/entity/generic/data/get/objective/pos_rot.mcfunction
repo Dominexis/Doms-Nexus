@@ -1,4 +1,4 @@
-# Get position and rotation
+# Get data
 
 data modify storage nexus:data tag set value {Pos:[0.0d,0.0d,0.0d],Rotation:[0.0f,0.0f]}
 data modify storage nexus:data tag set from entity @s {}

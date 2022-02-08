@@ -2,7 +2,6 @@
 
 scoreboard players add @s nexus.ticks 1
 execute unless score @s nexus.ticks = #global nexus.ticks run function nexus:player/login
-scoreboard players operation @s nexus.ticks = #global nexus.ticks
 
 
 
@@ -42,9 +41,7 @@ execute if score #feature_player_nbt nexus.value matches 1 run function nexus:en
 
 # Manage health
 
-execute store result score #boolean nexus.value if entity @s[gamemode=!creative,gamemode=!spectator]
-execute if score #boolean nexus.value matches 0 run scoreboard players set @s nexus.damage 0
-execute if score #feature_player_health nexus.value matches 1 if score #boolean nexus.value matches 1 run function nexus:player/health/main
+execute if score #feature_player_health nexus.value matches 1 run function nexus:player/health/main
 
 
 
@@ -54,8 +51,8 @@ execute if score #feature_player_health nexus.value matches 1 if score #boolean 
 
 # Respawn functionality
 
-execute if score #feature_player_respawn nexus.value matches 1 run tag @s[scores={nexus.death=1..}] add nexus.player.property.dead
-execute if score #feature_player_respawn nexus.value matches 1 if entity @s[tag=nexus.player.property.dead] if entity @e[type=player,tag=nexus.player.target,limit=1] run function nexus:player/respawn
+execute if score #feature_player_respawn nexus.value matches 1 run tag @s[scores={nexus.death=1..}] add nexus.player.dead
+execute if score #feature_player_respawn nexus.value matches 1 if entity @s[tag=nexus.player.dead] if entity @e[type=player,tag=nexus.player.target,limit=1] run function nexus:player/respawn
 
 
 

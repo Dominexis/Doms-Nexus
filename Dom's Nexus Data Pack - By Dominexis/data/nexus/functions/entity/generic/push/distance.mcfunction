@@ -1,6 +1,6 @@
 # Extract position
 
-execute if entity @s[tag=!nexus.entity] run function nexus:entity/generic/data/extract/objective/pos
+execute if entity @s[tag=!nexus.entity] run function nexus:entity/generic/data/extract/objective
 
 
 

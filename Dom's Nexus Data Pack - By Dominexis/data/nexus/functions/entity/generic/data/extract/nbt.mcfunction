@@ -38,3 +38,7 @@ execute store result score @s nexus.mot_y run data get storage nexus:data tag.Mo
 execute store result score @s nexus.mot_z run data get storage nexus:data tag.Motion[2] 1000
 execute store result score @s nexus.yaw run data get storage nexus:data tag.Rotation[0] 10
 execute store result score @s nexus.pitch run data get storage nexus:data tag.Rotation[1] 10
+execute unless entity @s[type=!player,type=!#nexus:family/mob] store result score @s nexus.health run data get storage nexus:data tag.Health 1000
+
+scoreboard players set @s nexus.resistance -1
+execute if data storage nexus:data tag.ActiveEffects[{Id:11b}] store result score @s nexus.resistance run data get storage nexus:data tag.ActiveEffects[{Id:11b}].Amplifier

@@ -1,16 +1,8 @@
-# Get current health value
-
-execute store result score #damage_sensor_health nexus.value run data get entity @s Health 1000
-
-
-
-
-
-
-
 # Modify health score from current health
 
-scoreboard players operation @s nexus.health < #damage_sensor_health nexus.value
+scoreboard players operation #previous nexus.health = @s nexus.health
+function nexus:entity/generic/data/extract/objective
+scoreboard players operation @s nexus.health < #previous nexus.health
 
 
 

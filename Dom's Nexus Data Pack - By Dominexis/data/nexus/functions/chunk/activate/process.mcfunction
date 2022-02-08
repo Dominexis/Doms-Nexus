@@ -17,7 +17,8 @@ scoreboard players set @s nexus.y 0
 
 # Check if chunk already has a marker
 
-execute at @s store result score #chunk_boolean nexus.value if entity @e[type=marker,distance=..1,tag=nexus.chunk,tag=nexus.chunk.processed,limit=1]
+scoreboard players set #chunk_boolean nexus.value 0
+execute at @s as @e[type=marker,distance=..1,tag=nexus.chunk] if score @s nexus.modified = #global nexus.modified run scoreboard players set #chunk_boolean nexus.value 1
 
 
 
@@ -35,9 +36,9 @@ execute if score #chunk_boolean nexus.value matches 1 run kill @s
 
 
 
-# Add processed tag
+# Synchronize modified value
 
-execute if score #chunk_boolean nexus.value matches 0 run tag @s add nexus.chunk.processed
+execute if score #chunk_boolean nexus.value matches 0 run scoreboard players operation @s nexus.modified = #global nexus.modified
 
 
 
