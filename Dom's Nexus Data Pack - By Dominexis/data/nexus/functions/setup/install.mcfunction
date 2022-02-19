@@ -28,6 +28,7 @@ scoreboard objectives add nexus.seat dummy
 scoreboard objectives add nexus.nbt_ticks dummy
 scoreboard objectives add nexus.nbt_delay dummy
 scoreboard objectives add nexus.priority dummy
+scoreboard objectives add nexus.mot_ticks dummy
 
 scoreboard objectives add nexus.mode dummy
 scoreboard objectives add nexus.animation dummy

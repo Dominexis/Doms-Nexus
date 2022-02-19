@@ -58,6 +58,7 @@ scoreboard objectives remove nexus.seat
 scoreboard objectives remove nexus.nbt_ticks
 scoreboard objectives remove nexus.nbt_delay
 scoreboard objectives remove nexus.priority
+scoreboard objectives remove nexus.mot_ticks
 
 scoreboard objectives remove nexus.mode
 scoreboard objectives remove nexus.animation

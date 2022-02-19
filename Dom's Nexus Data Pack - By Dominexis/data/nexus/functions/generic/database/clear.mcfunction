@@ -1,6 +1,6 @@
 # Clear data list
 
-data modify storage nexus:data database set value []
+data modify storage nexus:data database.list set value []
 
 
 

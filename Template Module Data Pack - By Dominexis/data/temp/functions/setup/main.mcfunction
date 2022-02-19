@@ -27,6 +27,7 @@ scoreboard players add #feature_external_time_measurement nexus.value 0
 scoreboard players add #feature_player_nbt nexus.value 0
 scoreboard players add #feature_player_health nexus.value 0
 scoreboard players add #feature_player_respawn nexus.value 0
+scoreboard players add #feature_player_motion nexus.value 0
 scoreboard players add #feature_entity_processing nexus.value 0
 scoreboard players add #feature_entity_health nexus.value 0
 scoreboard players add #feature_custom_entity_ticking nexus.value 0

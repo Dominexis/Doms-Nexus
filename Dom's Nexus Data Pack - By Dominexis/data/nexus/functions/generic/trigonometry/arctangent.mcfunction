@@ -32,6 +32,8 @@ scoreboard players operation #math_trigonometry_0 nexus.value = #input_y nexus.v
 scoreboard players operation #math_trigonometry_0 nexus.value *= #1000 nexus.value
 scoreboard players operation #math_trigonometry_0 nexus.value /= #input_x nexus.value
 scoreboard players operation #math_trigonometry_1 nexus.value = #math_trigonometry_0 nexus.value
+scoreboard players operation #math_trigonometry_0 nexus.value *= #math_trigonometry_0 nexus.value
+scoreboard players operation #math_trigonometry_0 nexus.value /= #1000 nexus.value
 
 scoreboard players set #math_trigonometry_2 nexus.value 776
 scoreboard players set #math_trigonometry_3 nexus.value -2874
@@ -42,14 +44,10 @@ scoreboard players operation #math_trigonometry_4 nexus.value /= #10000 nexus.va
 
 scoreboard players operation #math_trigonometry_1 nexus.value *= #math_trigonometry_0 nexus.value
 scoreboard players operation #math_trigonometry_1 nexus.value /= #1000 nexus.value
-scoreboard players operation #math_trigonometry_1 nexus.value *= #math_trigonometry_0 nexus.value
-scoreboard players operation #math_trigonometry_1 nexus.value /= #1000 nexus.value
 
 scoreboard players operation #math_trigonometry_3 nexus.value *= #math_trigonometry_1 nexus.value
 scoreboard players operation #math_trigonometry_3 nexus.value /= #10000 nexus.value
 
-scoreboard players operation #math_trigonometry_1 nexus.value *= #math_trigonometry_0 nexus.value
-scoreboard players operation #math_trigonometry_1 nexus.value /= #1000 nexus.value
 scoreboard players operation #math_trigonometry_1 nexus.value *= #math_trigonometry_0 nexus.value
 scoreboard players operation #math_trigonometry_1 nexus.value /= #1000 nexus.value
 

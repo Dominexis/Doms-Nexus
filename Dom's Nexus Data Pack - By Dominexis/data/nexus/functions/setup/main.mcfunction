@@ -2,7 +2,7 @@
 
 scoreboard players set #update_installation_boolean nexus.value 0
 
-scoreboard players set #last_modified nexus.value 2022020701
+scoreboard players set #last_modified nexus.value 2022021701
 execute unless score #doms_nexus_last_modified nexus.value = #last_modified nexus.value run scoreboard players set #update_installation_boolean nexus.value 1
 scoreboard players operation #doms_nexus_last_modified nexus.value = #last_modified nexus.value
 function #nexus:setup/last_modified
@@ -43,6 +43,7 @@ scoreboard players set #feature_external_time_measurement nexus.value 0
 scoreboard players set #feature_player_nbt nexus.value 0
 scoreboard players set #feature_player_health nexus.value 0
 scoreboard players set #feature_player_respawn nexus.value 0
+scoreboard players set #feature_player_motion nexus.value 0
 scoreboard players set #feature_entity_processing nexus.value 0
 scoreboard players set #feature_entity_health nexus.value 0
 scoreboard players set #feature_custom_entity_ticking nexus.value 0
@@ -90,6 +91,7 @@ function #nexus:setup/main
 # Adjust feature booleans for dependencies
 
 execute if score #feature_player_health nexus.value matches 1 run scoreboard players set #feature_player_respawn nexus.value 1
+execute if score #feature_player_motion nexus.value matches 1 run scoreboard players set #feature_player_respawn nexus.value 1
 execute if score #feature_unconditional_entity_ticking nexus.value matches 1 run scoreboard players set #feature_custom_entity_ticking nexus.value 1
 execute if score #feature_object_ticking nexus.value matches 1 run scoreboard players set #feature_time_manager nexus.value 1
 execute if score #feature_chunk_ticking nexus.value matches 1 run scoreboard players set #feature_time_manager nexus.value 1
