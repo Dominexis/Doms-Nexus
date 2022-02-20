@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "nexus_010803:version/initialize"
+        "etm_010003:error/outdated_nexus"
     ]
 }
