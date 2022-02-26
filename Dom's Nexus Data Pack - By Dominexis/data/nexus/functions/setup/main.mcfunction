@@ -2,7 +2,7 @@
 
 scoreboard players set #update_installation_boolean nexus.value 0
 
-scoreboard players set #last_modified nexus.value 2022021701
+scoreboard players set #last_modified nexus.value 2022022501
 execute unless score #doms_nexus_last_modified nexus.value = #last_modified nexus.value run scoreboard players set #update_installation_boolean nexus.value 1
 scoreboard players operation #doms_nexus_last_modified nexus.value = #last_modified nexus.value
 function #nexus:setup/last_modified
@@ -70,7 +70,7 @@ function nexus:object/reset
 
 # Tell that Nexus loaded properly
 
-execute if score #debug_system_messages nexus.value matches 1 if score #update_installation_boolean nexus.value matches 1 run tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue","bold":true},{"text":"]","color":"gray"}," ",{"text":"Nexus and modules were successfully installed.","color":"gray"}]
+execute if score #debug_system_messages nexus.value matches 1 if score #update_installation_boolean nexus.value matches 1 run tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"Nexus and modules were successfully installed.","color":"gray"}]
 
 
 
@@ -119,7 +119,7 @@ execute if score #minimum_difficulty nexus.value matches 3 if score #current_dif
 
 # Send notice if no modules are installed
 
-execute if score #debug_system_messages nexus.value matches 1 if score #doms_nexus_module_count nexus.value matches 0 run tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue","bold":true},{"text":"]","color":"gray"}," ",{"text":"No modules currently installed, visit ","color":"gray"},{"text":"Planet Minecraft","color":"dark_green","underlined":true,"bold":true,"hoverEvent":{"action":"show_text","value":{"text":"Dom's Nexus on Planet Minecraft","color":"dark_green"}},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/dom-s-nexus/"}},{"text":" to download some modules.","color":"gray"}]
+execute if score #debug_system_messages nexus.value matches 1 if score #doms_nexus_module_count nexus.value matches 0 run tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"No modules currently installed, visit ","color":"gray"},{"text":"Planet Minecraft","color":"dark_green","underlined":true,"hoverEvent":{"action":"show_text","value":[{"text":"Dom's Nexus","color":"blue"},{"text":" on ","color":"gray"},{"text":"Planet Minecraft","color":"dark_green"}]},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/dom-s-nexus/"}},{"text":" to download some modules.","color":"gray"}]
 
 
 
@@ -142,5 +142,5 @@ scoreboard players set #doms_nexus_verification_boolean nexus.value 1
 scoreboard players set #doms_nexus_ticking_function nexus.value 0
 function #minecraft:tick
 
-execute if score #doms_nexus_ticking_function nexus.value matches 0 run tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue","bold":true},{"text":"]","color":"gray"}," ",{"text":"Error: ","color":"dark_red"},{"text":"Function tag ","color":"red"},{"text":"#minecraft:tick","color":"white"},{"text":" didn't load properly. Disable the installed data pack that interferes with the function tag.","color":"red"}]
+execute if score #doms_nexus_ticking_function nexus.value matches 0 run tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"Error: ","color":"dark_red"},{"text":"Function tag ","color":"red"},{"text":"#minecraft:tick","color":"gold"},{"text":" didn't load properly. Disable the installed data pack that interferes with the function tag.","color":"red"}]
 execute if score #doms_nexus_ticking_function nexus.value matches 1 run scoreboard players add #global nexus.ticks 1

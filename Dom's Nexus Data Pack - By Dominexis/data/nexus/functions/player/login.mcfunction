@@ -1,10 +1,10 @@
 # Display first part of message
 
-execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [{"text":"=====================================================","color":"dark_blue","strikethrough":true}]
-execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [" ",{"text":"Dom's Nexus","color":"gold","underlined":true,"bold":true,"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/dom-s-nexus/"},"hoverEvent":{"action":"show_text","value":[{"text":"<<< ","color":"dark_blue"},{"text":"Dom's Nexus","color":"dark_red","bold":true},{"text":" on ","color":"gold","bold":true},{"text":"Planet Minecraft","color":"dark_red","bold":true},{"text":" >>>"}]}}," ",{"text":"1.8.3","color":"dark_red","bold":true},{"text":" - ","color":"dark_blue"},{"text":"For Version: ","color":"gold","bold":true},{"text":"1.18.1","color":"dark_red","bold":true}]
-execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [{"text":"=====================================================","color":"dark_blue","strikethrough":true}]
-execute if score #debug_login_messages nexus.value matches 1 if score #doms_nexus_module_count nexus.value matches 1.. run tellraw @s [" ",{"text":"Loaded Modules (","color":"gold","bold":true},{"score":{"name":"#doms_nexus_module_count","objective":"nexus.value"},"color":"gold","bold":true},{"text":"):","color":"gold","bold":true}]
-execute if score #debug_login_messages nexus.value matches 1 if score #doms_nexus_module_count nexus.value matches 000 run tellraw @s [" ",{"text":"No Modules","color":"gold","bold":true}]
+execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [{"text":"                                                                                ","color":"gray","strikethrough":true}]
+execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [" ",{"text":"Dom's Nexus","color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/dom-s-nexus/"},"hoverEvent":{"action":"show_text","value":[{"text":"Dom's Nexus","color":"blue"},{"text":" on ","color":"gray"},{"text":"Planet Minecraft","color":"dark_green"}]}}," ",{"text":"1.8.4","color":"gold"},{"text":" - ","color":"gray"},{"text":"For Version: ","color":"gray"},{"text":"1.18.1","color":"gold"}]
+execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [{"text":"                                                                                ","color":"gray","strikethrough":true}]
+execute if score #debug_login_messages nexus.value matches 1 if score #doms_nexus_module_count nexus.value matches 1.. run tellraw @s [" ",{"text":"Loaded Modules (","color":"gray"},{"score":{"name":"#doms_nexus_module_count","objective":"nexus.value"},"color":"gray"},{"text":"):","color":"gray"}]
+execute if score #debug_login_messages nexus.value matches 1 if score #doms_nexus_module_count nexus.value matches 000 run tellraw @s [" ",{"text":"No Modules","color":"gray"}]
 
 
 
@@ -24,9 +24,9 @@ function #nexus:player/login
 
 # Display last part of message
 
-execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [{"text":"=====================================================","color":"dark_blue","strikethrough":true}]
-execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [" ",{"text":"By ","color":"gold","bold":true},{"text":"Dominexis","color":"dark_red","bold":true,"underlined":true,"clickEvent":{"action":"open_url","value":"https://www.youtube.com/channel/UCVWEunqgTlAHK-pA17HEP6Q"},"hoverEvent":{"action":"show_text","value":[{"text":"<<< ","color":"dark_blue"},{"text":"My ","color":"gold","bold":true},{"text":"YouTube ","color":"dark_red","bold":true},{"text":"Channel","color":"gold","bold":true},{"text":" >>>"}]}}]
-execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [{"text":"=====================================================","color":"dark_blue","strikethrough":true}]
+execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [{"text":"                                                                                ","color":"gray","strikethrough":true}]
+execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [" ",{"text":"By ","color":"gray"},{"text":"Dominexis","color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.youtube.com/channel/UCVWEunqgTlAHK-pA17HEP6Q"},"hoverEvent":{"action":"show_text","value":[{"text":"My YouTube Channel","color":"gold"}]}}]
+execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [{"text":"                                                                                ","color":"gray","strikethrough":true}]
 
 
 

@@ -20,7 +20,7 @@ function #nexus:uninstall/modules
 
 # Send message to chat
 
-execute if score #debug_system_messages nexus.value matches 1 run tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue","bold":true},{"text":"]","color":"gray"}," ",{"text":"Nexus and modules were successfully uninstalled.","color":"gray"}]
+execute if score #debug_system_messages nexus.value matches 1 run tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"Nexus and modules were successfully uninstalled.","color":"gray"}]
 
 
 
@@ -95,18 +95,9 @@ scoreboard objectives remove nexus.poi_x
 scoreboard objectives remove nexus.poi_y
 scoreboard objectives remove nexus.poi_z
 
-scoreboard objectives remove nexus.collide
-scoreboard objectives remove nexus.collide_x
-scoreboard objectives remove nexus.collide_y
-scoreboard objectives remove nexus.collide_z
-
-scoreboard objectives remove nexus.head_x
-scoreboard objectives remove nexus.head_y
-scoreboard objectives remove nexus.head_z
-
-scoreboard objectives remove nexus.ang_vel_x
-scoreboard objectives remove nexus.ang_vel_y
-scoreboard objectives remove nexus.ang_vel_z
+scoreboard objectives remove nexus.mot_poi_x
+scoreboard objectives remove nexus.mot_poi_y
+scoreboard objectives remove nexus.mot_poi_z
 
 scoreboard objectives remove nexus.prev_x
 scoreboard objectives remove nexus.prev_y
@@ -115,6 +106,8 @@ scoreboard objectives remove nexus.prev_z
 scoreboard objectives remove nexus.prev_mot_x
 scoreboard objectives remove nexus.prev_mot_y
 scoreboard objectives remove nexus.prev_mot_z
+
+
 
 scoreboard objectives remove nexus.yaw
 scoreboard objectives remove nexus.pitch
@@ -128,9 +121,32 @@ scoreboard objectives remove nexus.poi_yaw
 scoreboard objectives remove nexus.poi_pitch
 scoreboard objectives remove nexus.poi_roll
 
+scoreboard objectives remove nexus.mot_poi_yaw
+scoreboard objectives remove nexus.mot_poi_pitch
+scoreboard objectives remove nexus.mot_poi_roll
+
 scoreboard objectives remove nexus.prev_yaw
 scoreboard objectives remove nexus.prev_pitch
 scoreboard objectives remove nexus.prev_roll
+
+scoreboard objectives remove nexus.prev_mot_yaw
+scoreboard objectives remove nexus.prev_mot_pitch
+scoreboard objectives remove nexus.prev_mot_roll
+
+
+
+scoreboard objectives remove nexus.collide
+scoreboard objectives remove nexus.collide_x
+scoreboard objectives remove nexus.collide_y
+scoreboard objectives remove nexus.collide_z
+
+scoreboard objectives remove nexus.head_x
+scoreboard objectives remove nexus.head_y
+scoreboard objectives remove nexus.head_z
+
+scoreboard objectives remove nexus.ang_vel_x
+scoreboard objectives remove nexus.ang_vel_y
+scoreboard objectives remove nexus.ang_vel_z
 
 
 
@@ -175,6 +191,10 @@ scoreboard objectives remove nexus.uuid_0
 scoreboard objectives remove nexus.uuid_1
 scoreboard objectives remove nexus.uuid_2
 scoreboard objectives remove nexus.uuid_3
+scoreboard objectives remove nexus.owner_uuid_0
+scoreboard objectives remove nexus.owner_uuid_1
+scoreboard objectives remove nexus.owner_uuid_2
+scoreboard objectives remove nexus.owner_uuid_3
 
 
 

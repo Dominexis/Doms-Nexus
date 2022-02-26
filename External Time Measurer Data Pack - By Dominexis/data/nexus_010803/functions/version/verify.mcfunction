@@ -1,3 +1,0 @@
-# Throw error if the Nexus is not installed
-
-execute if score #doms_nexus_installed_boolean nexus.value matches 0 run tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue","bold":true},{"text":"]","color":"gray"}," ",{"text":"Error: ","color":"dark_red"},{"text":"Dom's Nexus data pack is not installed. Visit ","color":"red"},{"text":"Planet Minecraft","color":"dark_green","bold":true,"underlined":true,"hoverEvent":{"action":"show_text","value":{"text":"Dom's Nexus on Planet Minecraft","color":"dark_green"}},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/dom-s-nexus/"}},{"text":" to download it.","color":"red"}]

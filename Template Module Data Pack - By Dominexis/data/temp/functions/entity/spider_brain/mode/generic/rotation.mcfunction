@@ -1,6 +1,7 @@
 # Pathfind around obstacles
 
-execute if entity @s[tag=!temp.entity.property.pathfinder_disabled] run function nexus:entity/generic/pathfinder/crawl/main
+execute if entity @s[scores={nexus.mode=2},tag=!temp.entity.property.pathfinder_disabled] run function nexus:entity/generic/pathfinder/crawl/main
+execute unless score @s nexus.mode matches 2 run scoreboard players set @s nexus.pathfinder 0
 
 
 

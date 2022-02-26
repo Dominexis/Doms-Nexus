@@ -83,6 +83,10 @@ execute store result score @s nexus.uuid_0 run data get storage nexus:data tag.U
 execute store result score @s nexus.uuid_1 run data get storage nexus:data tag.UUID[1]
 execute store result score @s nexus.uuid_2 run data get storage nexus:data tag.UUID[2]
 execute store result score @s nexus.uuid_3 run data get storage nexus:data tag.UUID[3]
+execute store result score @s nexus.owner_uuid_0 run data get storage nexus:data tag.Owner[0]
+execute store result score @s nexus.owner_uuid_1 run data get storage nexus:data tag.Owner[1]
+execute store result score @s nexus.owner_uuid_2 run data get storage nexus:data tag.Owner[2]
+execute store result score @s nexus.owner_uuid_3 run data get storage nexus:data tag.Owner[3]
 
 
 

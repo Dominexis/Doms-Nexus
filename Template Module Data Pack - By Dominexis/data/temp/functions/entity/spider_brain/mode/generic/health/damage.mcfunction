@@ -1,5 +1,6 @@
 # Process damage sensor
 
+scoreboard players set #health temp.value 0
 execute as @e[type=slime,distance=..8,tag=temp.entity.part.damage_sensor,tag=nexus.entity.target,limit=1] run function temp:entity/spider_brain/mode/generic/health/scores
 
 

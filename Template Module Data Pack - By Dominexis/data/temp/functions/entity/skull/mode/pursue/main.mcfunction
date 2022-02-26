@@ -77,6 +77,7 @@ scoreboard players operation #interpolation_destination_y nexus.value /= #5 nexu
 scoreboard players set #interpolation_velocity_x nexus.value 0
 scoreboard players set #interpolation_velocity_y nexus.value 0
 scoreboard players set #interpolation_acceleration nexus.value 100
+scoreboard players operation #interpolation_acceleration nexus.value *= #missed_ticks nexus.value
 scoreboard players set #scale_factor nexus.value 1
 
 function nexus:generic/interpolation/floating_point/2d

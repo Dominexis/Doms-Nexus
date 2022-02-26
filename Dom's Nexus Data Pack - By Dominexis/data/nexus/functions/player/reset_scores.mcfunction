@@ -2,7 +2,6 @@
 
 scoreboard players reset @s nexus.use_item
 scoreboard players reset @s nexus.milk
-scoreboard players reset @s nexus.death
 
 
 

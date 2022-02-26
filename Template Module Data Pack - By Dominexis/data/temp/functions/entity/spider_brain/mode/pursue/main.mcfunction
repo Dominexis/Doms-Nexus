@@ -44,7 +44,7 @@ function temp:entity/spider_brain/mode/generic/rotation
 # Modify motion
 
 scoreboard players set #speed temp.value 350
-function temp:entity/spider_brain/mode/generic/walk
+execute if score @s nexus.mot_y matches -1000.. run function temp:entity/spider_brain/mode/generic/walk
 
 
 

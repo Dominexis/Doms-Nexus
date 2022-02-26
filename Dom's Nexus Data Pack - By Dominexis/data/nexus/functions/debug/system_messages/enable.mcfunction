@@ -20,4 +20,4 @@ scoreboard players set #debug_system_messages nexus.value 1
 
 # Send message
 
-tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue","bold":true},{"text":"]","color":"gray"}," ",{"text":"System messages enabled.","color":"gray"}]
+tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"System messages enabled.","color":"gray"}]

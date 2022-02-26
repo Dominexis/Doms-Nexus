@@ -1,3 +1,0 @@
-# Return error about outdated nexus
-
-tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue","bold":true},{"text":"]","color":"gray"}," ",{"text":"Error: ","color":"dark_red"},{"text":"Conflicting Nexus versions. Please update module ","color":"red"},{"text":"External Time Measurer","color":"gold","bold":true,"underlined":true,"hoverEvent":{"action":"show_text","value":{"text":"Dom's Nexus on Planet Minecraft","color":"dark_green"}},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/dom-s-nexus/"}},{"text":" to latest version.","color":"red"}]

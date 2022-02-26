@@ -1,6 +1,6 @@
 # Spawn test object
 
-summon marker ~ ~ ~ {Tags:["nexus.object","temp.object","temp.object.type.glass_dome","nexus.object.target.spawn"]}
+summon marker ~ ~ ~ {Tags:["nexus.object","temp.object","temp.object.type.glass_dome","nexus.object.target.spawn","nexus.object.visible"]}
 
 
 

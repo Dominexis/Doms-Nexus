@@ -20,4 +20,4 @@ execute if score #doms_nexus_error_boolean nexus.value matches 0 run function ne
 
 # Return error if there were errors
 
-execute if score #doms_nexus_error_boolean nexus.value matches 1 run tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue","bold":true},{"text":"]","color":"gray"}," ",{"text":"Nexus and modules were unable to install.","color":"gray"}]
+execute if score #doms_nexus_error_boolean nexus.value matches 1 run tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"Nexus and modules were unable to install.","color":"gray"}]

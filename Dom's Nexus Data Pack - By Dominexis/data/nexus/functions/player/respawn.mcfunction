@@ -1,6 +1,16 @@
-# Remove dead tag
+# Remove tags
 
-tag @s remove nexus.player.dead
+tag @s remove nexus.player.motion
+
+
+
+
+
+
+
+# Reset deaths score
+
+scoreboard players reset @s nexus.death
 
 
 

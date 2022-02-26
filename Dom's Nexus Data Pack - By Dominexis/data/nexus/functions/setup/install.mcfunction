@@ -66,18 +66,9 @@ scoreboard objectives add nexus.poi_x dummy
 scoreboard objectives add nexus.poi_y dummy
 scoreboard objectives add nexus.poi_z dummy
 
-scoreboard objectives add nexus.collide dummy
-scoreboard objectives add nexus.collide_x dummy
-scoreboard objectives add nexus.collide_y dummy
-scoreboard objectives add nexus.collide_z dummy
-
-scoreboard objectives add nexus.head_x dummy
-scoreboard objectives add nexus.head_y dummy
-scoreboard objectives add nexus.head_z dummy
-
-scoreboard objectives add nexus.ang_vel_x dummy
-scoreboard objectives add nexus.ang_vel_y dummy
-scoreboard objectives add nexus.ang_vel_z dummy
+scoreboard objectives add nexus.mot_poi_x dummy
+scoreboard objectives add nexus.mot_poi_y dummy
+scoreboard objectives add nexus.mot_poi_z dummy
 
 scoreboard objectives add nexus.prev_x dummy
 scoreboard objectives add nexus.prev_y dummy
@@ -86,6 +77,8 @@ scoreboard objectives add nexus.prev_z dummy
 scoreboard objectives add nexus.prev_mot_x dummy
 scoreboard objectives add nexus.prev_mot_y dummy
 scoreboard objectives add nexus.prev_mot_z dummy
+
+
 
 scoreboard objectives add nexus.yaw dummy
 scoreboard objectives add nexus.pitch dummy
@@ -99,9 +92,32 @@ scoreboard objectives add nexus.poi_yaw dummy
 scoreboard objectives add nexus.poi_pitch dummy
 scoreboard objectives add nexus.poi_roll dummy
 
+scoreboard objectives add nexus.mot_poi_yaw dummy
+scoreboard objectives add nexus.mot_poi_pitch dummy
+scoreboard objectives add nexus.mot_poi_roll dummy
+
 scoreboard objectives add nexus.prev_yaw dummy
 scoreboard objectives add nexus.prev_pitch dummy
 scoreboard objectives add nexus.prev_roll dummy
+
+scoreboard objectives add nexus.prev_mot_yaw dummy
+scoreboard objectives add nexus.prev_mot_pitch dummy
+scoreboard objectives add nexus.prev_mot_roll dummy
+
+
+
+scoreboard objectives add nexus.collide dummy
+scoreboard objectives add nexus.collide_x dummy
+scoreboard objectives add nexus.collide_y dummy
+scoreboard objectives add nexus.collide_z dummy
+
+scoreboard objectives add nexus.head_x dummy
+scoreboard objectives add nexus.head_y dummy
+scoreboard objectives add nexus.head_z dummy
+
+scoreboard objectives add nexus.ang_vel_x dummy
+scoreboard objectives add nexus.ang_vel_y dummy
+scoreboard objectives add nexus.ang_vel_z dummy
 
 
 
@@ -146,6 +162,10 @@ scoreboard objectives add nexus.uuid_0 dummy
 scoreboard objectives add nexus.uuid_1 dummy
 scoreboard objectives add nexus.uuid_2 dummy
 scoreboard objectives add nexus.uuid_3 dummy
+scoreboard objectives add nexus.owner_uuid_0 dummy
+scoreboard objectives add nexus.owner_uuid_1 dummy
+scoreboard objectives add nexus.owner_uuid_2 dummy
+scoreboard objectives add nexus.owner_uuid_3 dummy
 
 
 
@@ -327,8 +347,8 @@ team modify nexus.vehicle seeFriendlyInvisibles false
 
 # Add bossbars
 
-bossbar add nexus:object_count [{"text":"Objects Remaining: ","color":"gold","bold":true},{"text":"0","color":"dark_red","bold":true}]
-bossbar set nexus:object_count color blue
+bossbar add nexus:object_count [{"text":"Objects Remaining: ","color":"gray"},{"text":"0","color":"gold"}]
+bossbar set nexus:object_count color white
 bossbar set nexus:object_count max 1
 bossbar set nexus:object_count value 0
 bossbar set nexus:object_count style progress

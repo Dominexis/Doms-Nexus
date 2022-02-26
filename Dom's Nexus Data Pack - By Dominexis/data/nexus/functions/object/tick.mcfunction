@@ -5,8 +5,8 @@ scoreboard players operation #visible_object_count_maximum nexus.value > #visibl
 execute if score #visible_object_count nexus.value matches 0 run scoreboard players set #visible_object_count_maximum nexus.value 1
 execute store result bossbar nexus:object_count max run scoreboard players get #visible_object_count_maximum nexus.value
 execute store result bossbar nexus:object_count value run scoreboard players get #visible_object_count nexus.value
-execute if score #visible_object_count nexus.value matches 1 run bossbar set nexus:object_count name [{"text":"Object Remaining: ","color":"gold","bold":true},{"score":{"name":"#visible_object_count","objective":"nexus.value"},"color":"dark_red","bold":true}]
-execute unless score #visible_object_count nexus.value matches 1 run bossbar set nexus:object_count name [{"text":"Objects Remaining: ","color":"gold","bold":true},{"score":{"name":"#visible_object_count","objective":"nexus.value"},"color":"dark_red","bold":true}]
+execute if score #visible_object_count nexus.value matches 1 run bossbar set nexus:object_count name [{"text":"Object Remaining: ","color":"gray"},{"score":{"name":"#visible_object_count","objective":"nexus.value"},"color":"gold"}]
+execute unless score #visible_object_count nexus.value matches 1 run bossbar set nexus:object_count name [{"text":"Objects Remaining: ","color":"gray"},{"score":{"name":"#visible_object_count","objective":"nexus.value"},"color":"gold"}]
 execute if score #visible_object_count nexus.value matches 1.. run bossbar set nexus:object_count players @a
 execute if score #visible_object_count nexus.value matches 0 run bossbar set nexus:object_count players
 

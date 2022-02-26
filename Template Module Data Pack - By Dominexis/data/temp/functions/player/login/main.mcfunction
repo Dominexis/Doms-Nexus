@@ -1,3 +1,3 @@
 # Send message
 
-execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [" ",{"text":"- ","color":"dark_blue"},{"text":"Template Module","color":"gold","bold":true},{"text":" - ","color":"dark_blue"},{"text":"1.0.3","color":"gold","bold":true}]
+execute if score #debug_login_messages nexus.value matches 1 run tellraw @s [" ",{"text":"- ","color":"gray"},{"text":"Template Module","color":"gold"},{"text":" - ","color":"gray"},{"text":"1.0.4","color":"gold"}]

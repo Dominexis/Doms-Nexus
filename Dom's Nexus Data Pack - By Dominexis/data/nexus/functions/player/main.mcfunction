@@ -51,9 +51,7 @@ execute if score #feature_player_health nexus.value matches 1 run function nexus
 
 # Respawn functionality
 
-execute if score #feature_player_respawn nexus.value matches 1 run tag @s[scores={nexus.death=1..}] add nexus.player.dead
-execute if score #feature_player_respawn nexus.value matches 1 run tag @s[scores={nexus.death=1..}] remove nexus.player.motion
-execute if score #feature_player_respawn nexus.value matches 1 if entity @s[tag=nexus.player.dead] if entity @e[type=player,tag=nexus.player.target,limit=1] run function nexus:player/respawn
+execute if score #feature_player_respawn nexus.value matches 1 if score @s nexus.death matches 1.. if entity @e[type=player,distance=..1,tag=nexus.player.target,limit=1] run function nexus:player/respawn
 
 
 

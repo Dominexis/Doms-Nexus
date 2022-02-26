@@ -12,17 +12,15 @@ execute as @a[gamemode=!spectator,tag=nexus.player.motion] if score @s nexus.id 
 # Modify motion
 
 scoreboard players operation @s nexus.poi_x = #entity_x nexus.value
-scoreboard players operation @s nexus.poi_y = #entity_y nexus.value
 scoreboard players operation @s nexus.poi_z = #entity_z nexus.value
 scoreboard players operation @s nexus.poi_x -= @s nexus.x
-scoreboard players operation @s nexus.poi_y -= @s nexus.y
 scoreboard players operation @s nexus.poi_z -= @s nexus.z
 scoreboard players operation @s nexus.poi_x /= #8 nexus.value
-scoreboard players operation @s nexus.poi_y /= #8 nexus.value
 scoreboard players operation @s nexus.poi_z /= #8 nexus.value
 scoreboard players operation @s nexus.mot_x += @s nexus.poi_x
-scoreboard players operation @s nexus.mot_y += @s nexus.poi_y
 scoreboard players operation @s nexus.mot_z += @s nexus.poi_z
+
+scoreboard players operation @s nexus.mot_y += #gravity nexus.value
 
 
 
