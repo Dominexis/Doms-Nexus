@@ -59,6 +59,12 @@ scoreboard players set #feature_object_ticking nexus.value 0
 scoreboard players set #feature_chunk_processing nexus.value 0
 scoreboard players set #feature_chunk_ticking nexus.value 0
 scoreboard players set #feature_chunk_range nexus.value 0
+scoreboard players set #feature_maximum_entity_time nexus.value 45
+scoreboard players set #feature_maximum_object_time nexus.value 45
+scoreboard players set #feature_maximum_chunk_time nexus.value 45
+scoreboard players set #feature_minimum_entity_time nexus.value 5
+scoreboard players set #feature_minimum_object_time nexus.value 5
+scoreboard players set #feature_minimum_chunk_time nexus.value 3
 
 function nexus:object/reset
 

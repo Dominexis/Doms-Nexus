@@ -67,6 +67,16 @@ execute at @s run teleport @a[tag=nexus.player.target,limit=1] ~ ~ ~
 
 
 
+# Apply slow falling to player
+
+effect give @a[tag=nexus.player.target,limit=1] slow_falling 1 0 true
+
+
+
+
+
+
+
 # Termination
 
 scoreboard players set #boolean nexus.value 0

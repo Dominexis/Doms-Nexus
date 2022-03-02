@@ -46,25 +46,6 @@ scoreboard players operation #tick_time nexus.value = #world_border_diameter nex
 
 
 
-# Set entity tick values
-
-scoreboard players set #terminate_entity_tick nexus.value 0
-
-scoreboard players set #entity_tick_time_limit nexus.value 45
-scoreboard players operation #entity_tick_time_limit nexus.value -= #player_tick_time nexus.value
-scoreboard players operation #entity_tick_time_limit nexus.value -= #generic_tick_time nexus.value
-scoreboard players operation #entity_tick_time_limit nexus.value -= #external_tick_time nexus.value
-scoreboard players operation #entity_tick_time_limit nexus.value -= #world_tick_time nexus.value
-execute if score #active_object_priority nexus.value matches 1.. run scoreboard players operation #entity_tick_time_limit nexus.value -= #object_tick_time nexus.value
-execute if score #entity_tick_time_limit nexus.value matches ..4 run scoreboard players set #entity_tick_time_limit nexus.value 5
-scoreboard players operation #entity_tick_time_limit nexus.value += #tick_time nexus.value
-
-
-
-
-
-
-
 # Perform miscellaneous entity functions
 
 scoreboard players add #air_toggle_timer nexus.value 1

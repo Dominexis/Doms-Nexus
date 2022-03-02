@@ -2,14 +2,14 @@
 
 scoreboard players set #terminate_chunk_tick nexus.value 0
 
-scoreboard players set #chunk_tick_time_limit nexus.value 45
+scoreboard players operation #chunk_tick_time_limit nexus.value = #feature_maximum_chunk_time nexus.value
 scoreboard players operation #chunk_tick_time_limit nexus.value -= #player_tick_time nexus.value
 scoreboard players operation #chunk_tick_time_limit nexus.value -= #entity_tick_time nexus.value
 scoreboard players operation #chunk_tick_time_limit nexus.value -= #object_tick_time nexus.value
 scoreboard players operation #chunk_tick_time_limit nexus.value -= #generic_tick_time nexus.value
 scoreboard players operation #chunk_tick_time_limit nexus.value -= #external_tick_time nexus.value
 scoreboard players operation #chunk_tick_time_limit nexus.value -= #world_tick_time nexus.value
-execute if score #chunk_tick_time_limit nexus.value matches ..2 run scoreboard players set #chunk_tick_time_limit nexus.value 3
+execute if score #chunk_tick_time_limit nexus.value < #feature_minimum_chunk_time nexus.value run scoreboard players operation #chunk_tick_time_limit nexus.value = #feature_minimum_chunk_time nexus.value
 scoreboard players operation #chunk_tick_time_limit nexus.value += #tick_time nexus.value
 
 

@@ -17,6 +17,7 @@ scoreboard players set #feature_entity_processing nexus.value 1
 scoreboard players set #feature_custom_entity_ticking nexus.value 1
 scoreboard players set #feature_vehicle nexus.value 1
 scoreboard players set #feature_object_ticking nexus.value 1
+execute if score #feature_maximum_entity_time nexus.value matches 45.. run scoreboard players set #feature_maximum_entity_time nexus.value 45
 
 
 
@@ -43,6 +44,12 @@ scoreboard players add #feature_object_ticking nexus.value 0
 scoreboard players add #feature_chunk_processing nexus.value 0
 scoreboard players add #feature_chunk_ticking nexus.value 0
 scoreboard players add #feature_chunk_range nexus.value 0
+scoreboard players add #feature_maximum_entity_time nexus.value 0
+scoreboard players add #feature_maximum_object_time nexus.value 0
+scoreboard players add #feature_maximum_chunk_time nexus.value 0
+scoreboard players add #feature_minimum_entity_time nexus.value 0
+scoreboard players add #feature_minimum_object_time nexus.value 0
+scoreboard players add #feature_minimum_chunk_time nexus.value 0
 
 
 

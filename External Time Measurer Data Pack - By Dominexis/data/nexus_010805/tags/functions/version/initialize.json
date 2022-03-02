@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "etm:tick/main"
+        "etm_010005:version/initialize"
     ]
 }

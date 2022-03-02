@@ -647,6 +647,6 @@
         ]
     ],
     "rewards": {
-        "function": "nexus:generic/event_id/player_hurt_entity"
+        "function": "nexus:generic/event_id/player_hurt_entity/main"
     }
 }
