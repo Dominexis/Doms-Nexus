@@ -37,9 +37,9 @@ scoreboard players set @s nexus.mot_z 0
 scoreboard players set @s nexus.id_bool 1
 scoreboard players set @s nexus.id_range 8
 scoreboard players set @s nexus.tick_dist 32
-scoreboard players set @s nexus.v_id_bool 1
-scoreboard players set @s nexus.air_t_bool 1
-scoreboard players set @s nexus.dmg_s_bool 0
+scoreboard players set @s nexus.vehicle_id_bool 1
+scoreboard players set @s nexus.air_toggle_bool 1
+scoreboard players set @s nexus.damage_sensor_bool 0
 
 scoreboard players set @s nexus.size 800
 scoreboard players set @s nexus.mass 1500

@@ -13,9 +13,9 @@ scoreboard objectives add nexus.tick_bool dummy
 
 scoreboard objectives add nexus.id_bool dummy
 scoreboard objectives add nexus.id_range dummy
-scoreboard objectives add nexus.v_id_bool dummy
-scoreboard objectives add nexus.air_t_bool dummy
-scoreboard objectives add nexus.dmg_s_bool dummy
+scoreboard objectives add nexus.vehicle_id_bool dummy
+scoreboard objectives add nexus.air_toggle_bool dummy
+scoreboard objectives add nexus.damage_sensor_bool dummy
 
 
 
@@ -179,52 +179,52 @@ scoreboard objectives add nexus.event_piwe dummy
 
 scoreboard objectives add nexus.pathfinder dummy
 scoreboard objectives add nexus.threshold dummy
-scoreboard objectives add nexus.threshold1 dummy
-scoreboard objectives add nexus.threshold2 dummy
+scoreboard objectives add nexus.threshold_1 dummy
+scoreboard objectives add nexus.threshold_2 dummy
 
 
 
-scoreboard objectives add nexus.anim_t_00 dummy
-scoreboard objectives add nexus.anim_t_01 dummy
-scoreboard objectives add nexus.anim_t_02 dummy
-scoreboard objectives add nexus.anim_t_03 dummy
-scoreboard objectives add nexus.anim_t_04 dummy
-scoreboard objectives add nexus.anim_t_05 dummy
-scoreboard objectives add nexus.anim_t_06 dummy
-scoreboard objectives add nexus.anim_t_07 dummy
-scoreboard objectives add nexus.anim_t_08 dummy
-scoreboard objectives add nexus.anim_t_09 dummy
-scoreboard objectives add nexus.anim_t_10 dummy
-scoreboard objectives add nexus.anim_t_11 dummy
-scoreboard objectives add nexus.anim_t_12 dummy
-scoreboard objectives add nexus.anim_t_13 dummy
-scoreboard objectives add nexus.anim_t_14 dummy
-scoreboard objectives add nexus.anim_t_15 dummy
-scoreboard objectives add nexus.anim_t_16 dummy
-scoreboard objectives add nexus.anim_t_17 dummy
-scoreboard objectives add nexus.anim_t_18 dummy
-scoreboard objectives add nexus.anim_t_19 dummy
+scoreboard objectives add nexus.anim_time_00 dummy
+scoreboard objectives add nexus.anim_time_01 dummy
+scoreboard objectives add nexus.anim_time_02 dummy
+scoreboard objectives add nexus.anim_time_03 dummy
+scoreboard objectives add nexus.anim_time_04 dummy
+scoreboard objectives add nexus.anim_time_05 dummy
+scoreboard objectives add nexus.anim_time_06 dummy
+scoreboard objectives add nexus.anim_time_07 dummy
+scoreboard objectives add nexus.anim_time_08 dummy
+scoreboard objectives add nexus.anim_time_09 dummy
+scoreboard objectives add nexus.anim_time_10 dummy
+scoreboard objectives add nexus.anim_time_11 dummy
+scoreboard objectives add nexus.anim_time_12 dummy
+scoreboard objectives add nexus.anim_time_13 dummy
+scoreboard objectives add nexus.anim_time_14 dummy
+scoreboard objectives add nexus.anim_time_15 dummy
+scoreboard objectives add nexus.anim_time_16 dummy
+scoreboard objectives add nexus.anim_time_17 dummy
+scoreboard objectives add nexus.anim_time_18 dummy
+scoreboard objectives add nexus.anim_time_19 dummy
 
-scoreboard objectives add nexus.anim_i_00 dummy
-scoreboard objectives add nexus.anim_i_01 dummy
-scoreboard objectives add nexus.anim_i_02 dummy
-scoreboard objectives add nexus.anim_i_03 dummy
-scoreboard objectives add nexus.anim_i_04 dummy
-scoreboard objectives add nexus.anim_i_05 dummy
-scoreboard objectives add nexus.anim_i_06 dummy
-scoreboard objectives add nexus.anim_i_07 dummy
-scoreboard objectives add nexus.anim_i_08 dummy
-scoreboard objectives add nexus.anim_i_09 dummy
-scoreboard objectives add nexus.anim_i_10 dummy
-scoreboard objectives add nexus.anim_i_11 dummy
-scoreboard objectives add nexus.anim_i_12 dummy
-scoreboard objectives add nexus.anim_i_13 dummy
-scoreboard objectives add nexus.anim_i_14 dummy
-scoreboard objectives add nexus.anim_i_15 dummy
-scoreboard objectives add nexus.anim_i_16 dummy
-scoreboard objectives add nexus.anim_i_17 dummy
-scoreboard objectives add nexus.anim_i_18 dummy
-scoreboard objectives add nexus.anim_i_19 dummy
+scoreboard objectives add nexus.anim_infl_00 dummy
+scoreboard objectives add nexus.anim_infl_01 dummy
+scoreboard objectives add nexus.anim_infl_02 dummy
+scoreboard objectives add nexus.anim_infl_03 dummy
+scoreboard objectives add nexus.anim_infl_04 dummy
+scoreboard objectives add nexus.anim_infl_05 dummy
+scoreboard objectives add nexus.anim_infl_06 dummy
+scoreboard objectives add nexus.anim_infl_07 dummy
+scoreboard objectives add nexus.anim_infl_08 dummy
+scoreboard objectives add nexus.anim_infl_09 dummy
+scoreboard objectives add nexus.anim_infl_10 dummy
+scoreboard objectives add nexus.anim_infl_11 dummy
+scoreboard objectives add nexus.anim_infl_12 dummy
+scoreboard objectives add nexus.anim_infl_13 dummy
+scoreboard objectives add nexus.anim_infl_14 dummy
+scoreboard objectives add nexus.anim_infl_15 dummy
+scoreboard objectives add nexus.anim_infl_16 dummy
+scoreboard objectives add nexus.anim_infl_17 dummy
+scoreboard objectives add nexus.anim_infl_18 dummy
+scoreboard objectives add nexus.anim_infl_19 dummy
 
 
 

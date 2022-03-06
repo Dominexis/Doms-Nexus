@@ -1,6 +1,6 @@
 # Set influence value
 
-scoreboard players set @s nexus.anim_i_01 1000
+scoreboard players set @s nexus.anim_infl_01 1000
 
 
 
@@ -10,7 +10,7 @@ scoreboard players set @s nexus.anim_i_01 1000
 
 # Reset timer
 
-scoreboard players set @s nexus.anim_t_01 10
+scoreboard players set @s nexus.anim_time_01 10
 
 
 

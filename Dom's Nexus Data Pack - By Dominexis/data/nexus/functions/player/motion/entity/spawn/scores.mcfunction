@@ -24,6 +24,8 @@ scoreboard players set @s nexus.poi_z 0
 scoreboard players operation @s nexus.id = #local nexus.id
 scoreboard players set @s nexus.mass 1000
 
+scoreboard players set @s nexus.velocity 0
+
 
 
 

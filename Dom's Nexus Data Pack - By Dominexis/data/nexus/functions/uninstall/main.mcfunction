@@ -43,9 +43,9 @@ scoreboard objectives remove nexus.tick_bool
 
 scoreboard objectives remove nexus.id_bool
 scoreboard objectives remove nexus.id_range
-scoreboard objectives remove nexus.v_id_bool
-scoreboard objectives remove nexus.air_t_bool
-scoreboard objectives remove nexus.dmg_s_bool
+scoreboard objectives remove nexus.vehicle_id_bool
+scoreboard objectives remove nexus.air_toggle_bool
+scoreboard objectives remove nexus.damage_sensor_bool
 
 
 
@@ -208,52 +208,52 @@ scoreboard objectives remove nexus.event_piwe
 
 scoreboard objectives remove nexus.pathfinder
 scoreboard objectives remove nexus.threshold
-scoreboard objectives remove nexus.threshold1
-scoreboard objectives remove nexus.threshold2
+scoreboard objectives remove nexus.threshold_1
+scoreboard objectives remove nexus.threshold_2
 
 
 
-scoreboard objectives remove nexus.anim_t_00
-scoreboard objectives remove nexus.anim_t_01
-scoreboard objectives remove nexus.anim_t_02
-scoreboard objectives remove nexus.anim_t_03
-scoreboard objectives remove nexus.anim_t_04
-scoreboard objectives remove nexus.anim_t_05
-scoreboard objectives remove nexus.anim_t_06
-scoreboard objectives remove nexus.anim_t_07
-scoreboard objectives remove nexus.anim_t_08
-scoreboard objectives remove nexus.anim_t_09
-scoreboard objectives remove nexus.anim_t_10
-scoreboard objectives remove nexus.anim_t_11
-scoreboard objectives remove nexus.anim_t_12
-scoreboard objectives remove nexus.anim_t_13
-scoreboard objectives remove nexus.anim_t_14
-scoreboard objectives remove nexus.anim_t_15
-scoreboard objectives remove nexus.anim_t_16
-scoreboard objectives remove nexus.anim_t_17
-scoreboard objectives remove nexus.anim_t_18
-scoreboard objectives remove nexus.anim_t_19
+scoreboard objectives remove nexus.anim_time_00
+scoreboard objectives remove nexus.anim_time_01
+scoreboard objectives remove nexus.anim_time_02
+scoreboard objectives remove nexus.anim_time_03
+scoreboard objectives remove nexus.anim_time_04
+scoreboard objectives remove nexus.anim_time_05
+scoreboard objectives remove nexus.anim_time_06
+scoreboard objectives remove nexus.anim_time_07
+scoreboard objectives remove nexus.anim_time_08
+scoreboard objectives remove nexus.anim_time_09
+scoreboard objectives remove nexus.anim_time_10
+scoreboard objectives remove nexus.anim_time_11
+scoreboard objectives remove nexus.anim_time_12
+scoreboard objectives remove nexus.anim_time_13
+scoreboard objectives remove nexus.anim_time_14
+scoreboard objectives remove nexus.anim_time_15
+scoreboard objectives remove nexus.anim_time_16
+scoreboard objectives remove nexus.anim_time_17
+scoreboard objectives remove nexus.anim_time_18
+scoreboard objectives remove nexus.anim_time_19
 
-scoreboard objectives remove nexus.anim_i_00
-scoreboard objectives remove nexus.anim_i_01
-scoreboard objectives remove nexus.anim_i_02
-scoreboard objectives remove nexus.anim_i_03
-scoreboard objectives remove nexus.anim_i_04
-scoreboard objectives remove nexus.anim_i_05
-scoreboard objectives remove nexus.anim_i_06
-scoreboard objectives remove nexus.anim_i_07
-scoreboard objectives remove nexus.anim_i_08
-scoreboard objectives remove nexus.anim_i_09
-scoreboard objectives remove nexus.anim_i_10
-scoreboard objectives remove nexus.anim_i_11
-scoreboard objectives remove nexus.anim_i_12
-scoreboard objectives remove nexus.anim_i_13
-scoreboard objectives remove nexus.anim_i_14
-scoreboard objectives remove nexus.anim_i_15
-scoreboard objectives remove nexus.anim_i_16
-scoreboard objectives remove nexus.anim_i_17
-scoreboard objectives remove nexus.anim_i_18
-scoreboard objectives remove nexus.anim_i_19
+scoreboard objectives remove nexus.anim_infl_00
+scoreboard objectives remove nexus.anim_infl_01
+scoreboard objectives remove nexus.anim_infl_02
+scoreboard objectives remove nexus.anim_infl_03
+scoreboard objectives remove nexus.anim_infl_04
+scoreboard objectives remove nexus.anim_infl_05
+scoreboard objectives remove nexus.anim_infl_06
+scoreboard objectives remove nexus.anim_infl_07
+scoreboard objectives remove nexus.anim_infl_08
+scoreboard objectives remove nexus.anim_infl_09
+scoreboard objectives remove nexus.anim_infl_10
+scoreboard objectives remove nexus.anim_infl_11
+scoreboard objectives remove nexus.anim_infl_12
+scoreboard objectives remove nexus.anim_infl_13
+scoreboard objectives remove nexus.anim_infl_14
+scoreboard objectives remove nexus.anim_infl_15
+scoreboard objectives remove nexus.anim_infl_16
+scoreboard objectives remove nexus.anim_infl_17
+scoreboard objectives remove nexus.anim_infl_18
+scoreboard objectives remove nexus.anim_infl_19
 
 
 

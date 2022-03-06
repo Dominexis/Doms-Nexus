@@ -1,8 +1,8 @@
 # Increment timer
 
-scoreboard players operation #previous nexus.anim_t_03 = @s nexus.anim_t_03
-scoreboard players operation @s nexus.anim_t_03 += #missed_ticks nexus.value
-execute if score @s nexus.anim_t_03 matches 10.. run scoreboard players set @s nexus.anim_t_03 10
+scoreboard players operation #previous nexus.anim_time_03 = @s nexus.anim_time_03
+scoreboard players operation @s nexus.anim_time_03 += #missed_ticks nexus.value
+execute if score @s nexus.anim_time_03 matches 10.. run scoreboard players set @s nexus.anim_time_03 10
 
 
 
@@ -12,7 +12,7 @@ execute if score @s nexus.anim_t_03 matches 10.. run scoreboard players set @s n
 
 # Apply half-second cosine wave to bones
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_03
+scoreboard players operation #input nexus.value = @s nexus.anim_time_03
 scoreboard players operation #input nexus.value *= #360 nexus.value
 
 function nexus:generic/trigonometry/cosine
@@ -58,4 +58,4 @@ scoreboard players operation #back_left_leg_rotation_x temp.value += #animate_ba
 
 # Stop animation when timer hits the end
 
-execute if score @s nexus.anim_t_03 matches 10.. run tag @s remove temp.entity.animate.land
+execute if score @s nexus.anim_time_03 matches 10.. run tag @s remove temp.entity.animate.land

@@ -1,11 +1,11 @@
 # Calculate influence
 
-scoreboard players operation #previous nexus.anim_i_01 = @s nexus.anim_i_01
-scoreboard players operation @s nexus.anim_i_01 += #missed_ticks nexus.value
-execute if score #previous nexus.anim_i_01 matches 1..10 run scoreboard players set @s[scores={nexus.anim_i_01=10..}] nexus.anim_i_01 10
-execute if score #previous nexus.anim_i_01 matches ..000 run scoreboard players set @s[scores={nexus.anim_i_01=0.. }] nexus.anim_i_01 0
+scoreboard players operation #previous nexus.anim_infl_01 = @s nexus.anim_infl_01
+scoreboard players operation @s nexus.anim_infl_01 += #missed_ticks nexus.value
+execute if score #previous nexus.anim_infl_01 matches 1..10 run scoreboard players set @s[scores={nexus.anim_infl_01=10..}] nexus.anim_infl_01 10
+execute if score #previous nexus.anim_infl_01 matches ..000 run scoreboard players set @s[scores={nexus.anim_infl_01=0.. }] nexus.anim_infl_01 0
 
-scoreboard players operation #input nexus.value = @s nexus.anim_i_01
+scoreboard players operation #input nexus.value = @s nexus.anim_infl_01
 execute if score #input nexus.value matches ..-1 run scoreboard players operation #input nexus.value *= #-1 nexus.value
 scoreboard players operation #input nexus.value *= #100 nexus.value
 function nexus:generic/interpolation/smoothstep
@@ -22,8 +22,8 @@ scoreboard players operation #influence temp.value = #output nexus.value
 scoreboard players operation #velocity temp.value = @s nexus.velocity
 scoreboard players operation #velocity temp.value *= #missed_ticks nexus.value
 
-scoreboard players operation #previous nexus.anim_t_01 = @s nexus.anim_t_01
-scoreboard players operation @s nexus.anim_t_01 += #velocity temp.value
+scoreboard players operation #previous nexus.anim_time_01 = @s nexus.anim_time_01
+scoreboard players operation @s nexus.anim_time_01 += #velocity temp.value
 
 scoreboard players set #default_velocity temp.value 250
 
@@ -35,8 +35,8 @@ scoreboard players set #default_velocity temp.value 250
 
 # Play sounds
 
-scoreboard players operation #math_00 temp.value = @s nexus.anim_t_01
-scoreboard players operation #math_01 temp.value = #previous nexus.anim_t_01
+scoreboard players operation #math_00 temp.value = @s nexus.anim_time_01
+scoreboard players operation #math_01 temp.value = #previous nexus.anim_time_01
 scoreboard players operation #math_00 temp.value /= #default_velocity temp.value
 scoreboard players operation #math_01 temp.value /= #default_velocity temp.value
 scoreboard players operation #math_00 temp.value /= #5 nexus.value
@@ -52,7 +52,7 @@ execute unless score #math_00 temp.value = #math_01 temp.value run playsound min
 
 # Apply half-second sine wave to bones
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_01
+scoreboard players operation #input nexus.value = @s nexus.anim_time_01
 scoreboard players operation #input nexus.value *= #360 nexus.value
 scoreboard players operation #input nexus.value /= #default_velocity temp.value
 function nexus:generic/trigonometry/sine
@@ -87,7 +87,7 @@ scoreboard players operation #animate_back_left_leg_rotation_y temp.value = #out
 
 # Apply half-second cosine wave to bones
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_01
+scoreboard players operation #input nexus.value = @s nexus.anim_time_01
 scoreboard players operation #input nexus.value *= #360 nexus.value
 scoreboard players operation #input nexus.value /= #default_velocity temp.value
 function nexus:generic/trigonometry/cosine
@@ -126,7 +126,7 @@ scoreboard players operation #animate_back_left_leg_rotation_x temp.value /= #de
 
 # Apply quarter-second cosine wave to bones
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_01
+scoreboard players operation #input nexus.value = @s nexus.anim_time_01
 scoreboard players operation #input nexus.value *= #720 nexus.value
 scoreboard players operation #input nexus.value /= #default_velocity temp.value
 function nexus:generic/trigonometry/cosine

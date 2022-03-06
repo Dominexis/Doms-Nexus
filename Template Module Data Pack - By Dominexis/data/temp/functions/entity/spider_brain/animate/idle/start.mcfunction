@@ -1,6 +1,6 @@
 # Set influence value
 
-scoreboard players set @s[tag=!temp.entity.animate.idle] nexus.anim_i_00 1
+scoreboard players set @s[tag=!temp.entity.animate.idle] nexus.anim_infl_00 1
 
 
 
@@ -10,7 +10,7 @@ scoreboard players set @s[tag=!temp.entity.animate.idle] nexus.anim_i_00 1
 
 # Reset timer
 
-scoreboard players set @s[tag=!temp.entity.animate.idle] nexus.anim_t_00 0
+scoreboard players set @s[tag=!temp.entity.animate.idle] nexus.anim_time_00 0
 
 
 

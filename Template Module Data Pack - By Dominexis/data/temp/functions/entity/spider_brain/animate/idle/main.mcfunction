@@ -1,11 +1,11 @@
 # Calculate influence
 
-scoreboard players operation #previous nexus.anim_i_00 = @s nexus.anim_i_00
-scoreboard players operation @s nexus.anim_i_00 += #missed_ticks nexus.value
-execute if score #previous nexus.anim_i_00 matches 1..10 run scoreboard players set @s[scores={nexus.anim_i_00=10..}] nexus.anim_i_00 10
-execute if score #previous nexus.anim_i_00 matches ..000 run scoreboard players set @s[scores={nexus.anim_i_00=0.. }] nexus.anim_i_00 0
+scoreboard players operation #previous nexus.anim_infl_00 = @s nexus.anim_infl_00
+scoreboard players operation @s nexus.anim_infl_00 += #missed_ticks nexus.value
+execute if score #previous nexus.anim_infl_00 matches 1..10 run scoreboard players set @s[scores={nexus.anim_infl_00=10..}] nexus.anim_infl_00 10
+execute if score #previous nexus.anim_infl_00 matches ..000 run scoreboard players set @s[scores={nexus.anim_infl_00=0.. }] nexus.anim_infl_00 0
 
-scoreboard players operation #input nexus.value = @s nexus.anim_i_00
+scoreboard players operation #input nexus.value = @s nexus.anim_infl_00
 execute if score #input nexus.value matches ..-1 run scoreboard players operation #input nexus.value *= #-1 nexus.value
 scoreboard players operation #input nexus.value *= #100 nexus.value
 function nexus:generic/interpolation/smoothstep
@@ -19,8 +19,8 @@ scoreboard players operation #influence temp.value = #output nexus.value
 
 # Increment timer
 
-scoreboard players operation #previous nexus.anim_t_00 = @s nexus.anim_t_00
-scoreboard players operation @s nexus.anim_t_00 += #missed_ticks nexus.value
+scoreboard players operation #previous nexus.anim_time_00 = @s nexus.anim_time_00
+scoreboard players operation @s nexus.anim_time_00 += #missed_ticks nexus.value
 
 
 
@@ -30,7 +30,7 @@ scoreboard players operation @s nexus.anim_t_00 += #missed_ticks nexus.value
 
 # Apply 4-second sine wave to bones
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_00
+scoreboard players operation #input nexus.value = @s nexus.anim_time_00
 scoreboard players operation #input nexus.value *= #45 nexus.value
 function nexus:generic/trigonometry/sine
 scoreboard players remove #output nexus.value 1000

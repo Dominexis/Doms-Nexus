@@ -1,6 +1,6 @@
 # Reset timer
 
-scoreboard players set @s[tag=!temp.entity.animate.attack] nexus.anim_t_04 0
+scoreboard players set @s[tag=!temp.entity.animate.attack] nexus.anim_time_04 0
 
 
 

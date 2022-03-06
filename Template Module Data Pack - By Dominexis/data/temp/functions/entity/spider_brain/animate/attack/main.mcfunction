@@ -1,8 +1,8 @@
 # Increment timer
 
-scoreboard players operation #previous nexus.anim_t_04 = @s nexus.anim_t_04
-scoreboard players operation @s nexus.anim_t_04 += #missed_ticks nexus.value
-execute if score @s nexus.anim_t_04 matches 20.. run scoreboard players set @s nexus.anim_t_04 20
+scoreboard players operation #previous nexus.anim_time_04 = @s nexus.anim_time_04
+scoreboard players operation @s nexus.anim_time_04 += #missed_ticks nexus.value
+execute if score @s nexus.anim_time_04 matches 20.. run scoreboard players set @s nexus.anim_time_04 20
 
 
 
@@ -12,7 +12,7 @@ execute if score @s nexus.anim_t_04 matches 20.. run scoreboard players set @s n
 
 # Apply 1-second cosine wave to bones
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_04
+scoreboard players operation #input nexus.value = @s nexus.anim_time_04
 scoreboard players operation #input nexus.value *= #180 nexus.value
 scoreboard players operation #input nexus.value *= #input nexus.value
 scoreboard players operation #input nexus.value /= #2500 nexus.value
@@ -37,14 +37,14 @@ scoreboard players operation #animate_front_left_leg_rotation_x temp.value = #wa
 
 # Apply sine waves to bones
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_04
+scoreboard players operation #input nexus.value = @s nexus.anim_time_04
 scoreboard players operation #input nexus.value *= #90 nexus.value
 
 function nexus:generic/trigonometry/sine
 
 scoreboard players operation #wave temp.value = #output nexus.value
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_04
+scoreboard players operation #input nexus.value = @s nexus.anim_time_04
 scoreboard players operation #input nexus.value *= #180 nexus.value
 
 function nexus:generic/trigonometry/sine
@@ -95,8 +95,8 @@ scoreboard players set #damage_source nexus.value 999900002
 scoreboard players set #damage_armor_boolean nexus.value 1
 scoreboard players set #damage_burn_boolean nexus.value 0
 
-execute if score #previous nexus.anim_t_04 matches ..12 if score @s nexus.anim_t_04 matches 13.. as @a[distance=..3] run function nexus:player/health/damage/verify
-execute if score #previous nexus.anim_t_04 matches ..12 if score @s nexus.anim_t_04 matches 13.. run playsound minecraft:entity.blaze.hurt hostile @a
+execute if score #previous nexus.anim_time_04 matches ..12 if score @s nexus.anim_time_04 matches 13.. as @a[distance=..3] run function nexus:player/health/damage/verify
+execute if score #previous nexus.anim_time_04 matches ..12 if score @s nexus.anim_time_04 matches 13.. run playsound minecraft:entity.blaze.hurt hostile @a
 
 
 
@@ -106,4 +106,4 @@ execute if score #previous nexus.anim_t_04 matches ..12 if score @s nexus.anim_t
 
 # Stop animation when timer hits the end
 
-execute if score @s nexus.anim_t_04 matches 20.. run tag @s remove temp.entity.animate.attack
+execute if score @s nexus.anim_time_04 matches 20.. run tag @s remove temp.entity.animate.attack

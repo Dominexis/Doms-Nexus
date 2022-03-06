@@ -50,7 +50,7 @@ attribute @s generic.max_health modifier remove 2718-0-0-0-00
 
 # Send death message if player died
 
-execute if score @s nexus.death matches 1.. run function #nexus:player/death_message
+execute if score @s nexus.death matches 1.. if score #debug_death_messages nexus.value matches 1 run function nexus:player/death_message/verify
 
 
 

@@ -1,8 +1,8 @@
 # Increment timer
 
-scoreboard players operation #previous nexus.anim_t_06 = @s nexus.anim_t_06
-scoreboard players operation @s nexus.anim_t_06 += #missed_ticks nexus.value
-execute if score @s nexus.anim_t_06 matches 20.. run scoreboard players set @s nexus.anim_t_06 20
+scoreboard players operation #previous nexus.anim_time_06 = @s nexus.anim_time_06
+scoreboard players operation @s nexus.anim_time_06 += #missed_ticks nexus.value
+execute if score @s nexus.anim_time_06 matches 20.. run scoreboard players set @s nexus.anim_time_06 20
 
 
 
@@ -12,8 +12,8 @@ execute if score @s nexus.anim_t_06 matches 20.. run scoreboard players set @s n
 
 # Play sounds
 
-execute if score #previous nexus.anim_t_06 matches ..09 if score @s nexus.anim_t_06 matches 10.. run playsound minecraft:entity.slime.squish hostile @a
-execute if score #previous nexus.anim_t_06 matches ..19 if score @s nexus.anim_t_06 matches 20.. run playsound minecraft:entity.slime.squish hostile @a
+execute if score #previous nexus.anim_time_06 matches ..09 if score @s nexus.anim_time_06 matches 10.. run playsound minecraft:entity.slime.squish hostile @a
+execute if score #previous nexus.anim_time_06 matches ..19 if score @s nexus.anim_time_06 matches 20.. run playsound minecraft:entity.slime.squish hostile @a
 
 
 
@@ -39,13 +39,13 @@ scoreboard players set #back_left_leg_rotation_x temp.value 0
 
 # Apply keyframes
 
-execute if score @s nexus.anim_t_06 matches 00..10 run function temp:entity/spider_brain/animate/death/keyframe/brain/fall
-execute if score @s nexus.anim_t_06 matches 11..15 run function temp:entity/spider_brain/animate/death/keyframe/brain/bounce
-execute if score @s nexus.anim_t_06 matches 16..20 run function temp:entity/spider_brain/animate/death/keyframe/brain/settle
+execute if score @s nexus.anim_time_06 matches 00..10 run function temp:entity/spider_brain/animate/death/keyframe/brain/fall
+execute if score @s nexus.anim_time_06 matches 11..15 run function temp:entity/spider_brain/animate/death/keyframe/brain/bounce
+execute if score @s nexus.anim_time_06 matches 16..20 run function temp:entity/spider_brain/animate/death/keyframe/brain/settle
 
-execute if score @s nexus.anim_t_06 matches 00..13 run function temp:entity/spider_brain/animate/death/keyframe/leg/collapse
-execute if score @s nexus.anim_t_06 matches 14..17 run function temp:entity/spider_brain/animate/death/keyframe/leg/fall
-execute if score @s nexus.anim_t_06 matches 18..20 run function temp:entity/spider_brain/animate/death/keyframe/leg/settle
+execute if score @s nexus.anim_time_06 matches 00..13 run function temp:entity/spider_brain/animate/death/keyframe/leg/collapse
+execute if score @s nexus.anim_time_06 matches 14..17 run function temp:entity/spider_brain/animate/death/keyframe/leg/fall
+execute if score @s nexus.anim_time_06 matches 18..20 run function temp:entity/spider_brain/animate/death/keyframe/leg/settle
 
 
 

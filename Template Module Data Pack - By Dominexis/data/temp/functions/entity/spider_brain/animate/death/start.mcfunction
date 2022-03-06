@@ -1,6 +1,6 @@
 # Reset timer
 
-scoreboard players set @s[tag=!temp.entity.animate.death] nexus.anim_t_06 0
+scoreboard players set @s[tag=!temp.entity.animate.death] nexus.anim_time_06 0
 
 
 

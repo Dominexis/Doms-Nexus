@@ -1,8 +1,8 @@
 # Push scores
 
 scoreboard players operation #entity_id_bool nexus.value = @s nexus.id_bool
-scoreboard players operation #entity_v_id_bool nexus.value = @s nexus.v_id_bool
-scoreboard players operation #entity_air_t_bool nexus.value = @s nexus.air_t_bool
+scoreboard players operation #entity_v_id_bool nexus.value = @s nexus.vehicle_id_bool
+scoreboard players operation #entity_air_t_bool nexus.value = @s nexus.air_toggle_bool
 
 
 
@@ -25,7 +25,7 @@ execute if score #entity_v_id_bool nexus.value matches 1 as @a if score @s nexus
 
 # Damage sensor management
 
-execute if score @s nexus.dmg_s_bool matches 1 as @e[type=#nexus:generic/damage_sensor,distance=..004,tag=nexus.entity.damage_sensor.activate,tag=nexus.entity.target] run function nexus:entity/generic/damage_sensor/tick
+execute if score @s nexus.damage_sensor_bool matches 1 as @e[type=#nexus:generic/damage_sensor,distance=..004,tag=nexus.entity.damage_sensor.activate,tag=nexus.entity.target] run function nexus:entity/generic/damage_sensor/tick
 
 
 

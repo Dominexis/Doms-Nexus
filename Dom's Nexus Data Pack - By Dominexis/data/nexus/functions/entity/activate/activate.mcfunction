@@ -8,6 +8,23 @@ tag @s add nexus.entity.activated
 
 
 
+# Calculate missed ticks
+
+execute unless score @s nexus.ticks = @s nexus.ticks run scoreboard players set @s nexus.ticks -1
+execute if score @s nexus.ticks matches -1 run scoreboard players operation @s nexus.ticks += #global nexus.ticks
+
+scoreboard players operation #missed_ticks nexus.value = #global nexus.ticks
+scoreboard players operation #missed_ticks nexus.value -= @s nexus.ticks
+execute if score #missed_ticks nexus.value matches 5.. run scoreboard players set #missed_ticks nexus.value 5
+execute if score #missed_ticks nexus.value matches ..0 run scoreboard players set #missed_ticks nexus.value 1
+scoreboard players operation @s nexus.ticks = #global nexus.ticks
+
+
+
+
+
+
+
 
 # Tick entity
 

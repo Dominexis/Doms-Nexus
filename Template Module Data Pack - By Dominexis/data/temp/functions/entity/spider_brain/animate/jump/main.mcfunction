@@ -1,8 +1,8 @@
 # Increment timer
 
-scoreboard players operation #previous nexus.anim_t_02 = @s nexus.anim_t_02
-scoreboard players operation @s nexus.anim_t_02 += #missed_ticks nexus.value
-execute if score @s nexus.anim_t_02 matches 20.. run scoreboard players set @s nexus.anim_t_02 20
+scoreboard players operation #previous nexus.anim_time_02 = @s nexus.anim_time_02
+scoreboard players operation @s nexus.anim_time_02 += #missed_ticks nexus.value
+execute if score @s nexus.anim_time_02 matches 20.. run scoreboard players set @s nexus.anim_time_02 20
 
 
 
@@ -12,14 +12,14 @@ execute if score @s nexus.anim_t_02 matches 20.. run scoreboard players set @s n
 
 # Apply sine waves to bones
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_02
+scoreboard players operation #input nexus.value = @s nexus.anim_time_02
 scoreboard players operation #input nexus.value *= #90 nexus.value
 
 function nexus:generic/trigonometry/sine
 
 scoreboard players operation #wave temp.value = #output nexus.value
 
-scoreboard players operation #input nexus.value = @s nexus.anim_t_02
+scoreboard players operation #input nexus.value = @s nexus.anim_time_02
 scoreboard players operation #input nexus.value *= #180 nexus.value
 
 function nexus:generic/trigonometry/sine
@@ -61,7 +61,7 @@ scoreboard players operation #back_left_leg_rotation_x temp.value += #animate_ba
 
 # Temporal effects
 
-execute if score #previous nexus.anim_t_02 matches ..5 if score @s nexus.anim_t_02 matches 6.. if score @s nexus.collide_y matches -1 run scoreboard players set @s nexus.mot_y 800
+execute if score #previous nexus.anim_time_02 matches ..5 if score @s nexus.anim_time_02 matches 6.. if score @s nexus.collide_y matches -1 run scoreboard players set @s nexus.mot_y 800
 
 
 
@@ -71,4 +71,4 @@ execute if score #previous nexus.anim_t_02 matches ..5 if score @s nexus.anim_t_
 
 # Stop animation when timer hits the end
 
-execute if score @s nexus.anim_t_02 matches 20.. run tag @s remove temp.entity.animate.jump
+execute if score @s nexus.anim_time_02 matches 20.. run tag @s remove temp.entity.animate.jump

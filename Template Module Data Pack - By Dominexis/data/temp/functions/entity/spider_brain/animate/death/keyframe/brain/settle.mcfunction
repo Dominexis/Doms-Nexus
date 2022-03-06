@@ -2,7 +2,7 @@
 
 scoreboard players set #point_a_timestamp nexus.value 15
 scoreboard players set #point_b_timestamp nexus.value 20
-scoreboard players operation #input_timestamp nexus.value = @s nexus.anim_t_06
+scoreboard players operation #input_timestamp nexus.value = @s nexus.anim_time_06
 
 scoreboard players set #point_01_a_position nexus.value -1000
 scoreboard players set #point_01_b_position nexus.value -1500

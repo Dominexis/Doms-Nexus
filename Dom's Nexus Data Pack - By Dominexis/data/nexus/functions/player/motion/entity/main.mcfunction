@@ -15,12 +15,14 @@ scoreboard players operation @s nexus.poi_x = #entity_x nexus.value
 scoreboard players operation @s nexus.poi_z = #entity_z nexus.value
 scoreboard players operation @s nexus.poi_x -= @s nexus.x
 scoreboard players operation @s nexus.poi_z -= @s nexus.z
-scoreboard players operation @s nexus.poi_x /= #8 nexus.value
-scoreboard players operation @s nexus.poi_z /= #8 nexus.value
+scoreboard players operation @s nexus.poi_x /= #6 nexus.value
+scoreboard players operation @s nexus.poi_z /= #6 nexus.value
 scoreboard players operation @s nexus.mot_x += @s nexus.poi_x
 scoreboard players operation @s nexus.mot_z += @s nexus.poi_z
 
 scoreboard players operation @s nexus.mot_y += #gravity nexus.value
+
+execute if score @s nexus.mot_y matches ..-1 run scoreboard players operation @s nexus.velocity -= @s nexus.mot_y
 
 
 
@@ -37,7 +39,7 @@ scoreboard players set #hitbox_width nexus.value 300
 scoreboard players set #collision_friction_numerator nexus.value 100
 scoreboard players set #fluid_friction_numerator nexus.value 90
 scoreboard players set #climb_friction_numerator nexus.value 100
-scoreboard players set #friction_numerator nexus.value 90
+scoreboard players set #friction_numerator nexus.value 98
 scoreboard players set #friction_denominator nexus.value 100
 
 scoreboard players set #motion_climb_boolean nexus.value 0
@@ -47,9 +49,6 @@ scoreboard players set #motion_missed_ticks_boolean nexus.value 0
 scoreboard players set #motion_limit nexus.value 0
 
 function nexus:entity/generic/motion/hv/main
-
-scoreboard players operation #temp_value nexus.value = @s nexus.collide
-scoreboard players operation #temp_value nexus.value = #collision_y nexus.value
 
 
 

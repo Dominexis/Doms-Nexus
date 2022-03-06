@@ -26,7 +26,7 @@ execute if score #crawl_axis nexus.value matches 1 if score @s nexus.collide_x =
 
 # Stop pathfinding if it passes the threshold
 
-execute if score #crawl_axis nexus.value matches 0 if score #corner_x nexus.value matches -1 if score @s nexus.x < @s nexus.threshold2 run scoreboard players set #pathfinder nexus.value 0
-execute if score #crawl_axis nexus.value matches 0 if score #corner_x nexus.value matches 01 if score @s nexus.x > @s nexus.threshold2 run scoreboard players set #pathfinder nexus.value 0
-execute if score #crawl_axis nexus.value matches 1 if score #corner_z nexus.value matches -1 if score @s nexus.z < @s nexus.threshold2 run scoreboard players set #pathfinder nexus.value 0
-execute if score #crawl_axis nexus.value matches 1 if score #corner_z nexus.value matches 01 if score @s nexus.z > @s nexus.threshold2 run scoreboard players set #pathfinder nexus.value 0
+execute if score #crawl_axis nexus.value matches 0 if score #corner_x nexus.value matches -1 if score @s nexus.x < @s nexus.threshold_2 run scoreboard players set #pathfinder nexus.value 0
+execute if score #crawl_axis nexus.value matches 0 if score #corner_x nexus.value matches 01 if score @s nexus.x > @s nexus.threshold_2 run scoreboard players set #pathfinder nexus.value 0
+execute if score #crawl_axis nexus.value matches 1 if score #corner_z nexus.value matches -1 if score @s nexus.z < @s nexus.threshold_2 run scoreboard players set #pathfinder nexus.value 0
+execute if score #crawl_axis nexus.value matches 1 if score #corner_z nexus.value matches 01 if score @s nexus.z > @s nexus.threshold_2 run scoreboard players set #pathfinder nexus.value 0

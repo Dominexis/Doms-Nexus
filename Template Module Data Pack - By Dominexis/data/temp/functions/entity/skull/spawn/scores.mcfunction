@@ -41,9 +41,9 @@ scoreboard players set @s nexus.health 3
 
 scoreboard players set @s nexus.id_bool 1
 scoreboard players set @s nexus.id_range 4
-scoreboard players set @s nexus.v_id_bool 0
-scoreboard players set @s nexus.air_t_bool 1
-scoreboard players set @s nexus.dmg_s_bool 0
+scoreboard players set @s nexus.vehicle_id_bool 0
+scoreboard players set @s nexus.air_toggle_bool 1
+scoreboard players set @s nexus.damage_sensor_bool 0
 
 scoreboard players set @s nexus.size 250
 scoreboard players set @s nexus.mass 500

@@ -17,6 +17,6 @@ execute if score #crawl_axis nexus.value matches 1 if score @s nexus.collide_z m
 execute if score #crawl_axis nexus.value matches 0 if score @s nexus.collide_x matches 0 run scoreboard players set #pathfinder nexus.value 2
 execute if score #crawl_axis nexus.value matches 1 if score @s nexus.collide_z matches 0 run scoreboard players set #pathfinder nexus.value 2
 
-execute if score #pathfinder nexus.value matches 1 run scoreboard players operation @s nexus.threshold2 = @s nexus.threshold1
-execute if score #pathfinder nexus.value matches 1 if score #crawl_axis nexus.value matches 0 run scoreboard players operation @s nexus.threshold1 = @s nexus.z
-execute if score #pathfinder nexus.value matches 1 if score #crawl_axis nexus.value matches 1 run scoreboard players operation @s nexus.threshold1 = @s nexus.x
+execute if score #pathfinder nexus.value matches 1 run scoreboard players operation @s nexus.threshold_2 = @s nexus.threshold_1
+execute if score #pathfinder nexus.value matches 1 if score #crawl_axis nexus.value matches 0 run scoreboard players operation @s nexus.threshold_1 = @s nexus.z
+execute if score #pathfinder nexus.value matches 1 if score #crawl_axis nexus.value matches 1 run scoreboard players operation @s nexus.threshold_1 = @s nexus.x
