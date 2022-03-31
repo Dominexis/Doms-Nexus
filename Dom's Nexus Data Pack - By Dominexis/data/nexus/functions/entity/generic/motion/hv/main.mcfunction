@@ -266,6 +266,36 @@ execute if score #motion_limit_z nexus.value matches 0 run scoreboard players se
 
 
 
+# Compute initial hitbox size
+
+scoreboard players operation #initial_hitbox_x nexus.value = #head_x nexus.value
+scoreboard players operation #initial_hitbox_y nexus.value = #head_y nexus.value
+scoreboard players operation #initial_hitbox_z nexus.value = #head_z nexus.value
+scoreboard players operation #initial_hitbox_x nexus.value /= #1000 nexus.value
+scoreboard players operation #initial_hitbox_y nexus.value /= #1000 nexus.value
+scoreboard players operation #initial_hitbox_z nexus.value /= #1000 nexus.value
+
+scoreboard players operation #math_00 nexus.value = #tail_x nexus.value
+scoreboard players operation #math_01 nexus.value = #tail_y nexus.value
+scoreboard players operation #math_02 nexus.value = #tail_z nexus.value
+scoreboard players operation #math_00 nexus.value /= #1000 nexus.value
+scoreboard players operation #math_01 nexus.value /= #1000 nexus.value
+scoreboard players operation #math_02 nexus.value /= #1000 nexus.value
+
+scoreboard players operation #initial_hitbox_x nexus.value -= #math_00 nexus.value
+scoreboard players operation #initial_hitbox_y nexus.value -= #math_01 nexus.value
+scoreboard players operation #initial_hitbox_z nexus.value -= #math_02 nexus.value
+
+execute if score #initial_hitbox_x nexus.value matches ..-1 run scoreboard players operation #initial_hitbox_x nexus.value *= #-1 nexus.value
+execute if score #initial_hitbox_y nexus.value matches ..-1 run scoreboard players operation #initial_hitbox_y nexus.value *= #-1 nexus.value
+execute if score #initial_hitbox_z nexus.value matches ..-1 run scoreboard players operation #initial_hitbox_z nexus.value *= #-1 nexus.value
+
+
+
+
+
+
+
 # Execute function tree
 
 function nexus:entity/generic/motion/hv/position/x

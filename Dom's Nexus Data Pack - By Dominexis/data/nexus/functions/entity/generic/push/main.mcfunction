@@ -16,7 +16,8 @@ scoreboard players set #force_z nexus.value 0
 
 # Calculate force based on surrounding entities
 
-execute as @e[distance=..4,tag=nexus.entity.push,tag=!nexus.player.vehicle] run function nexus:entity/generic/push/distance
+execute if score #player_push_boolean nexus.value matches 0 as @e[type=!player,distance=..4,tag=nexus.entity.push,tag=!nexus.player.vehicle] run function nexus:entity/generic/push/distance
+execute if score #player_push_boolean nexus.value matches 1 as @e[distance=..4,tag=nexus.entity.push,tag=!nexus.player.vehicle] run function nexus:entity/generic/push/distance
 
 
 

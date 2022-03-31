@@ -1,6 +1,8 @@
 # Apply gravity
 
-scoreboard players operation @s nexus.mot_y += #gravity nexus.value
+scoreboard players operation #math_00 temp.value = #gravity nexus.value
+scoreboard players operation #math_00 temp.value *= #missed_ticks nexus.value
+scoreboard players operation @s nexus.mot_y += #math_00 temp.value
 
 
 

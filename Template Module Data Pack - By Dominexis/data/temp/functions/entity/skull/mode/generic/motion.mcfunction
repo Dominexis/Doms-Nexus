@@ -12,6 +12,7 @@ scoreboard players operation @s nexus.mot_y += #math_00 temp.value
 
 # Apply push from entities
 
+scoreboard players set #player_push_boolean nexus.value 1
 function nexus:entity/generic/push/main
 
 

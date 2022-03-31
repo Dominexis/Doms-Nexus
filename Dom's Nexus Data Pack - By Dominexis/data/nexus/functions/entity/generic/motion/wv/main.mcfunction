@@ -247,6 +247,18 @@ execute if score #motion_limit_z nexus.value matches 0 run scoreboard players se
 
 
 
+# Compute initial hitbox size
+
+scoreboard players operation #initial_hitbox_x nexus.value = #hitbox_x nexus.value
+scoreboard players operation #initial_hitbox_y nexus.value = #hitbox_y nexus.value
+scoreboard players operation #initial_hitbox_z nexus.value = #hitbox_z nexus.value
+
+
+
+
+
+
+
 # Execute function tree
 
 function nexus:entity/generic/motion/wv/position/x

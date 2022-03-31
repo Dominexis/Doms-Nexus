@@ -75,7 +75,7 @@ scoreboard players operation #steer temp.value /= #1000 nexus.value
 scoreboard players set #friction_numerator nexus.value 95
 scoreboard players set #friction_denominator nexus.value 100
 
-execute if score @s nexus.collide_y matches -1 run scoreboard players operation @s nexus.mot_yaw = #steer temp.value
+execute if score @s nexus.animation matches 1.. run scoreboard players operation @s nexus.mot_yaw = #steer temp.value
 execute store result score #boolean temp.value if score @s nexus.mot_yaw matches ..-1
 execute if score #boolean temp.value matches 1 run scoreboard players operation @s nexus.mot_yaw *= #-1 nexus.value
 scoreboard players operation @s nexus.mot_yaw *= #friction_numerator nexus.value
@@ -104,20 +104,22 @@ scoreboard players operation @s temp.wheel += #math_00 temp.value
 
 # Modify motion
 
-scoreboard players operation @s nexus.mot_y += #gravity nexus.value
+scoreboard players operation #math_00 temp.value = #gravity nexus.value
+scoreboard players operation #math_00 temp.value *= #missed_ticks nexus.value
+scoreboard players operation @s nexus.mot_y += #math_00 temp.value
 
 scoreboard players operation #vector_x temp.value /= #5 nexus.value
 scoreboard players operation #vector_z temp.value /= #5 nexus.value
 
-execute if score @s nexus.collide_y matches -1 run scoreboard players operation @s nexus.mot_x *= #9 nexus.value
-execute if score @s nexus.collide_y matches -1 run scoreboard players operation @s nexus.mot_z *= #9 nexus.value
-execute if score @s nexus.collide_y matches -1 run scoreboard players operation @s nexus.mot_x /= #10 nexus.value
-execute if score @s nexus.collide_y matches -1 run scoreboard players operation @s nexus.mot_z /= #10 nexus.value
+execute if score @s nexus.animation matches 1.. run scoreboard players operation @s nexus.mot_x *= #9 nexus.value
+execute if score @s nexus.animation matches 1.. run scoreboard players operation @s nexus.mot_z *= #9 nexus.value
+execute if score @s nexus.animation matches 1.. run scoreboard players operation @s nexus.mot_x /= #10 nexus.value
+execute if score @s nexus.animation matches 1.. run scoreboard players operation @s nexus.mot_z /= #10 nexus.value
 
-execute if score @s nexus.collide_y matches -1 if score #wasd_control_w nexus.value matches 1 run scoreboard players operation @s nexus.mot_x += #vector_x temp.value
-execute if score @s nexus.collide_y matches -1 if score #wasd_control_w nexus.value matches 1 run scoreboard players operation @s nexus.mot_z += #vector_z temp.value
-execute if score @s nexus.collide_y matches -1 if score #wasd_control_s nexus.value matches 1 run scoreboard players operation @s nexus.mot_x -= #vector_x temp.value
-execute if score @s nexus.collide_y matches -1 if score #wasd_control_s nexus.value matches 1 run scoreboard players operation @s nexus.mot_z -= #vector_z temp.value
+execute if score @s nexus.animation matches 1.. if score #wasd_control_w nexus.value matches 1 run scoreboard players operation @s nexus.mot_x += #vector_x temp.value
+execute if score @s nexus.animation matches 1.. if score #wasd_control_w nexus.value matches 1 run scoreboard players operation @s nexus.mot_z += #vector_z temp.value
+execute if score @s nexus.animation matches 1.. if score #wasd_control_s nexus.value matches 1 run scoreboard players operation @s nexus.mot_x -= #vector_x temp.value
+execute if score @s nexus.animation matches 1.. if score #wasd_control_s nexus.value matches 1 run scoreboard players operation @s nexus.mot_z -= #vector_z temp.value
 
 
 
@@ -127,6 +129,7 @@ execute if score @s nexus.collide_y matches -1 if score #wasd_control_s nexus.va
 
 # Apply push from entities
 
+scoreboard players set #player_push_boolean nexus.value 1
 function nexus:entity/generic/push/main
 
 
@@ -167,6 +170,9 @@ execute if score #collision_x nexus.value matches 1 run scoreboard players opera
 execute if score #collision_y nexus.value matches 1 run scoreboard players operation @s nexus.mot_y *= #-1 nexus.value
 execute if score #collision_z nexus.value matches 1 run scoreboard players operation @s nexus.mot_z *= #-1 nexus.value
 execute if score #collision_y nexus.value matches 1 run scoreboard players operation @s nexus.mot_y /= #2 nexus.value
+
+execute if score @s nexus.collide_y matches -1 run scoreboard players set @s nexus.animation 4
+execute if score @s nexus.animation matches 1.. run scoreboard players remove @s nexus.animation 1
 
 
 
