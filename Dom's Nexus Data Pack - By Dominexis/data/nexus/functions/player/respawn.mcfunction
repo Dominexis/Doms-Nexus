@@ -1,5 +1,6 @@
 # Remove tags
 
+effect clear @s[tag=nexus.player.motion] slow_falling
 tag @s remove nexus.player.motion
 
 

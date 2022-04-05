@@ -2,7 +2,7 @@
 
 scoreboard players set #update_installation_boolean nexus.value 0
 
-scoreboard players set #last_modified nexus.value 2022030501
+scoreboard players set #last_modified nexus.value 2022040501
 execute unless score #doms_nexus_last_modified nexus.value = #last_modified nexus.value run scoreboard players set #update_installation_boolean nexus.value 1
 scoreboard players operation #doms_nexus_last_modified nexus.value = #last_modified nexus.value
 function #nexus:setup/last_modified

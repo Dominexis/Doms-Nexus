@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "nexus_010808:version/initialize"
+        "etm_010008:version/initialize"
     ]
 }

@@ -39,6 +39,16 @@ execute if score #feature_player_nbt nexus.value matches 1 run function nexus:en
 
 
 
+# Motion functionality
+
+execute if score #feature_player_motion nexus.value matches 1 if entity @s[tag=nexus.player.motion] run function nexus:player/motion/main
+
+
+
+
+
+
+
 # Manage health
 
 execute if score #feature_player_health nexus.value matches 1 run function nexus:player/health/main
@@ -62,16 +72,6 @@ execute if score #feature_player_respawn nexus.value matches 1 if score @s nexus
 # Vehicle functionality
 
 execute if score #feature_vehicle nexus.value matches 1 run function nexus:player/vehicle/main
-
-
-
-
-
-
-
-# Motion functionality
-
-execute if score #feature_player_motion nexus.value matches 1 if entity @s[tag=nexus.player.motion] run function nexus:player/motion/main
 
 
 

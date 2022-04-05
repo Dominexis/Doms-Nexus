@@ -302,6 +302,7 @@ scoreboard players set #2500 nexus.value 2500
 scoreboard players set #3141 nexus.value 3141
 scoreboard players set #3600 nexus.value 3600
 scoreboard players set #5040 nexus.value 5040
+scoreboard players set #6283 nexus.value 6283
 
 scoreboard players set #lcg_multiplier nexus.value 1664525
 scoreboard players set #lcg_increment nexus.value 1013904223
