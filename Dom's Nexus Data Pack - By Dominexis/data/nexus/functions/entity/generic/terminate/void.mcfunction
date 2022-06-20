@@ -1,6 +1,6 @@
 # Teleport entities
 
-execute as @e[tag=nexus.entity.terminate] at @s run teleport @s ~ -1000 ~
+execute as @e[tag=nexus.entity.terminate] at @s run function nexus:entity/generic/terminate/kill
 
 
 

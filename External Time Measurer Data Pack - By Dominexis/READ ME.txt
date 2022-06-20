@@ -1,7 +1,7 @@
-The External Time Measurer is designed to expand the tick time display debug function of Dom's Nexus to include a field for external time, that is, all time being taken by data packs that are not affiliated with the Nexus. In order for it to work properly, ensure that the Nexus or one of its modules is the first on the enabled list, and that this data pack is last on that list.
+The External Time Measurer is designed to expand the tick time display debug function of Dom's Nexus to include a field for external time, that is, all time being taken by data packs that are not affiliated with the Nexus. In order for it to work properly, ensure that the Nexus is the first on the enabled list, and that this data pack is last on that list.
 
 To change the ordering of the data packs, first review the sequence with the command: /datapack list
 After that, disable one of the data packs and reenable it with the commands:
 
-For the Nexus: /datapack enable <Nexus data pack name> first
+For the Nexus: /datapack enable <Nexus data pack name> after vanilla
 For the External Time Measurer: /datapack enable <ETM data pack name> last

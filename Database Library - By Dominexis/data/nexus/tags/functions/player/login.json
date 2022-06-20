@@ -1,0 +1,6 @@
+{
+    "replace": false,
+    "values": [
+        "database:player/login/main"
+    ]
+}

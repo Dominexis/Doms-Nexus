@@ -318,4 +318,3 @@ execute as @a run function nexus:uninstall/tag/player
 # Clear storage
 
 data remove storage nexus:data tag
-data remove storage nexus:data database

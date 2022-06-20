@@ -30,7 +30,7 @@ scoreboard players operation @s nexus.ticks = #global nexus.ticks
 
 scoreboard players set #boolean nexus.value 0
 
-execute unless score @s nexus.tick_dist matches 0..128 run scoreboard players set #boolean nexus.value 1
+execute unless score @s nexus.tick_dist matches 1..128 run scoreboard players set #boolean nexus.value 1
 execute if score @s nexus.tick_dist matches 001..008 if entity @a[distance=..008,gamemode=!spectator] run scoreboard players set #boolean nexus.value 1
 execute if score @s nexus.tick_dist matches 009..016 if entity @a[distance=..016,gamemode=!spectator] run scoreboard players set #boolean nexus.value 1
 execute if score @s nexus.tick_dist matches 017..032 if entity @a[distance=..032,gamemode=!spectator] run scoreboard players set #boolean nexus.value 1

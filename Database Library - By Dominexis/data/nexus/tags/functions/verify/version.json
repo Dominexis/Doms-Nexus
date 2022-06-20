@@ -1,0 +1,6 @@
+{
+    "replace": false,
+    "values": [
+        "database:verify/1_0_0/version"
+    ]
+}

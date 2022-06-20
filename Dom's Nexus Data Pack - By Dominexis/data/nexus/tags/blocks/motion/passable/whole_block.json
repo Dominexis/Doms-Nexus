@@ -11,9 +11,9 @@
 		"#minecraft:rails",
 		"#minecraft:signs",
         "#minecraft:wall_corals",
-        "#minecraft:carpets",
 		"#minecraft:candles",
 		"#minecraft:saplings",
+        "#nexus:generic/carpet",
 
 		"minecraft:air",
 		"minecraft:attached_melon_stem",

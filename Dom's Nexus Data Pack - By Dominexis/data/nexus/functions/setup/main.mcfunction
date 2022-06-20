@@ -2,7 +2,7 @@
 
 scoreboard players set #update_installation_boolean nexus.value 0
 
-scoreboard players set #last_modified nexus.value 2022040501
+scoreboard players set #last_modified nexus.value 2022062001
 execute unless score #doms_nexus_last_modified nexus.value = #last_modified nexus.value run scoreboard players set #update_installation_boolean nexus.value 1
 scoreboard players operation #doms_nexus_last_modified nexus.value = #last_modified nexus.value
 function #nexus:setup/last_modified
@@ -67,6 +67,7 @@ scoreboard players set #feature_minimum_object_time nexus.value 5
 scoreboard players set #feature_minimum_chunk_time nexus.value 3
 
 function nexus:object/reset
+function #nexus:setup/feature/initialize
 
 
 
@@ -103,6 +104,8 @@ execute if score #feature_object_ticking nexus.value matches 1 run scoreboard pl
 execute if score #feature_chunk_ticking nexus.value matches 1 run scoreboard players set #feature_time_manager nexus.value 1
 execute if score #feature_chunk_ticking nexus.value matches 1 run scoreboard players set #feature_chunk_processing nexus.value 1
 
+function #nexus:setup/feature/dependency
+
 
 
 
@@ -116,26 +119,6 @@ execute if score #minimum_difficulty nexus.value matches 0 if score #current_dif
 execute if score #minimum_difficulty nexus.value matches 1 if score #current_difficulty nexus.value < #minimum_difficulty nexus.value run difficulty easy
 execute if score #minimum_difficulty nexus.value matches 2 if score #current_difficulty nexus.value < #minimum_difficulty nexus.value run difficulty normal
 execute if score #minimum_difficulty nexus.value matches 3 if score #current_difficulty nexus.value < #minimum_difficulty nexus.value run difficulty hard
-
-
-
-
-
-
-
-# Send notice if no modules are installed
-
-execute if score #debug_system_messages nexus.value matches 1 if score #doms_nexus_module_count nexus.value matches 0 run tellraw @a[tag=nexus.player.operator] ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"No modules currently installed, visit ","color":"gray"},{"text":"Planet Minecraft","color":"dark_green","underlined":true,"hoverEvent":{"action":"show_text","value":[{"text":"Dom's Nexus","color":"blue"},{"text":" on ","color":"gray"},{"text":"Planet Minecraft","color":"dark_green"}]},"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/dom-s-nexus/"}},{"text":" to download some modules.","color":"gray"}]
-
-
-
-
-
-
-
-# Set installation boolean
-
-scoreboard players set #doms_nexus_verification_boolean nexus.value 1
 
 
 

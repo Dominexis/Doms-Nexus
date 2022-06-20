@@ -3,11 +3,11 @@
     "values": [
         "#minecraft:mineable/hoe",
         "#minecraft:candles",
-        "#minecraft:carpets",
         "#minecraft:flower_pots",
         "#minecraft:ice",
         "#nexus:generic/glass",
         "#nexus:generic/wool",
+        "#nexus:generic/carpet",
 
         "minecraft:cactus",
         "minecraft:cake",

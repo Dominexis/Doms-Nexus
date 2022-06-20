@@ -355,13 +355,3 @@ bossbar set nexus:object_count value 0
 bossbar set nexus:object_count style progress
 bossbar set nexus:object_count visible true
 bossbar set nexus:object_count players
-
-
-
-
-
-
-
-# Initialize database
-
-execute unless score #database_initialization_boolean nexus.value matches 1 run function nexus:generic/database/initialize

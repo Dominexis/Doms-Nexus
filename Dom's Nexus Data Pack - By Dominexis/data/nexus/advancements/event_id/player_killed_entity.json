@@ -4,7 +4,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_00.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.00.0\"]}"
                 }
             }
         },
@@ -12,7 +12,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_01.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.01.0\"]}"
                 }
             }
         },
@@ -20,7 +20,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_02.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.02.0\"]}"
                 }
             }
         },
@@ -28,7 +28,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_03.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.03.0\"]}"
                 }
             }
         },
@@ -36,7 +36,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_04.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.04.0\"]}"
                 }
             }
         },
@@ -44,7 +44,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_05.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.05.0\"]}"
                 }
             }
         },
@@ -52,7 +52,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_06.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.06.0\"]}"
                 }
             }
         },
@@ -60,7 +60,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_07.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.07.0\"]}"
                 }
             }
         },
@@ -68,7 +68,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_08.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.08.0\"]}"
                 }
             }
         },
@@ -76,7 +76,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_09.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.09.0\"]}"
                 }
             }
         },
@@ -84,7 +84,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_10.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.10.0\"]}"
                 }
             }
         },
@@ -92,7 +92,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_11.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.11.0\"]}"
                 }
             }
         },
@@ -100,7 +100,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_12.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.12.0\"]}"
                 }
             }
         },
@@ -108,7 +108,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_13.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.13.0\"]}"
                 }
             }
         },
@@ -116,7 +116,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_14.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.14.0\"]}"
                 }
             }
         },
@@ -124,7 +124,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_15.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.15.0\"]}"
                 }
             }
         },
@@ -132,7 +132,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_16.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.16.0\"]}"
                 }
             }
         },
@@ -140,7 +140,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_17.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.17.0\"]}"
                 }
             }
         },
@@ -148,7 +148,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_18.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.18.0\"]}"
                 }
             }
         },
@@ -156,7 +156,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_19.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.19.0\"]}"
                 }
             }
         },
@@ -164,7 +164,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_20.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.20.0\"]}"
                 }
             }
         },
@@ -172,7 +172,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_21.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.21.0\"]}"
                 }
             }
         },
@@ -180,7 +180,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_22.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.22.0\"]}"
                 }
             }
         },
@@ -188,7 +188,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_23.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.23.0\"]}"
                 }
             }
         },
@@ -196,7 +196,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_24.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.24.0\"]}"
                 }
             }
         },
@@ -204,7 +204,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_25.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.25.0\"]}"
                 }
             }
         },
@@ -212,7 +212,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_26.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.26.0\"]}"
                 }
             }
         },
@@ -220,7 +220,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_27.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.27.0\"]}"
                 }
             }
         },
@@ -228,7 +228,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_28.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.28.0\"]}"
                 }
             }
         },
@@ -236,7 +236,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_29.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.29.0\"]}"
                 }
             }
         },
@@ -244,7 +244,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_30.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.30.0\"]}"
                 }
             }
         },
@@ -252,7 +252,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_31.0\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.31.0\"]}"
                 }
             }
         },
@@ -263,7 +263,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_00.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.00.1\"]}"
                 }
             }
         },
@@ -271,7 +271,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_01.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.01.1\"]}"
                 }
             }
         },
@@ -279,7 +279,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_02.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.02.1\"]}"
                 }
             }
         },
@@ -287,7 +287,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_03.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.03.1\"]}"
                 }
             }
         },
@@ -295,7 +295,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_04.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.04.1\"]}"
                 }
             }
         },
@@ -303,7 +303,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_05.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.05.1\"]}"
                 }
             }
         },
@@ -311,7 +311,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_06.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.06.1\"]}"
                 }
             }
         },
@@ -319,7 +319,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_07.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.07.1\"]}"
                 }
             }
         },
@@ -327,7 +327,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_08.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.08.1\"]}"
                 }
             }
         },
@@ -335,7 +335,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_09.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.09.1\"]}"
                 }
             }
         },
@@ -343,7 +343,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_10.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.10.1\"]}"
                 }
             }
         },
@@ -351,7 +351,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_11.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.11.1\"]}"
                 }
             }
         },
@@ -359,7 +359,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_12.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.12.1\"]}"
                 }
             }
         },
@@ -367,7 +367,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_13.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.13.1\"]}"
                 }
             }
         },
@@ -375,7 +375,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_14.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.14.1\"]}"
                 }
             }
         },
@@ -383,7 +383,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_15.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.15.1\"]}"
                 }
             }
         },
@@ -391,7 +391,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_16.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.16.1\"]}"
                 }
             }
         },
@@ -399,7 +399,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_17.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.17.1\"]}"
                 }
             }
         },
@@ -407,7 +407,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_18.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.18.1\"]}"
                 }
             }
         },
@@ -415,7 +415,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_19.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.19.1\"]}"
                 }
             }
         },
@@ -423,7 +423,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_20.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.20.1\"]}"
                 }
             }
         },
@@ -431,7 +431,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_21.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.21.1\"]}"
                 }
             }
         },
@@ -439,7 +439,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_22.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.22.1\"]}"
                 }
             }
         },
@@ -447,7 +447,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_23.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.23.1\"]}"
                 }
             }
         },
@@ -455,7 +455,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_24.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.24.1\"]}"
                 }
             }
         },
@@ -463,7 +463,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_25.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.25.1\"]}"
                 }
             }
         },
@@ -471,7 +471,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_26.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.26.1\"]}"
                 }
             }
         },
@@ -479,7 +479,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_27.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.27.1\"]}"
                 }
             }
         },
@@ -487,7 +487,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_28.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.28.1\"]}"
                 }
             }
         },
@@ -495,7 +495,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_29.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.29.1\"]}"
                 }
             }
         },
@@ -503,7 +503,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_30.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.30.1\"]}"
                 }
             }
         },
@@ -511,7 +511,7 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"nexus.entity.id.bit_31.1\"]}"
+                    "nbt": "{Tags:[\"nexus.eid.31.1\"]}"
                 }
             }
         }
