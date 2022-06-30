@@ -1,6 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "database:setup/last_modified"
-    ]
-}
