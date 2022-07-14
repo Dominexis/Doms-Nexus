@@ -41,4 +41,4 @@ execute store result score @s nexus.pitch run data get storage nexus:data tag.Ro
 execute unless entity @s[type=!player,type=!#nexus:family/mob] store result score @s nexus.health run data get storage nexus:data tag.Health 1000
 
 scoreboard players set @s nexus.resistance -1
-execute if data storage nexus:data tag.ActiveEffects[{Id:11b}] store result score @s nexus.resistance run data get storage nexus:data tag.ActiveEffects[{Id:11b}].Amplifier
+execute if data storage nexus:data tag.ActiveEffects[{Id:11}] store result score @s nexus.resistance run data get storage nexus:data tag.ActiveEffects[{Id:11}].Amplifier

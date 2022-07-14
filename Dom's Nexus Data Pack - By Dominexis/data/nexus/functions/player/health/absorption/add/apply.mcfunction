@@ -13,4 +13,4 @@ scoreboard players operation @s nexus.hp_offset -= @s nexus.abs_amount
 # Push variables
 
 scoreboard players operation @s nexus.abs_level = #absorption_level nexus.value
-execute store result score @s nexus.abs_timer run data get storage nexus:data tag.ActiveEffects[{Id:22b}].Duration
+execute store result score @s nexus.abs_timer run data get storage nexus:data tag.ActiveEffects[{Id:22}].Duration
