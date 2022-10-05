@@ -1,0 +1,26 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:allay",
+        "minecraft:axolotl",
+        "minecraft:bat",
+        "minecraft:bee",
+        "minecraft:cat",
+        "minecraft:cave_spider",
+        "minecraft:chicken",
+        "minecraft:cod",
+        "minecraft:endermite",
+        "minecraft:fox",
+        "minecraft:frog",
+        "minecraft:ocelot",
+        "minecraft:parrot",
+        "minecraft:pufferfish",
+        "minecraft:rabbit",
+        "minecraft:salmon",
+        "minecraft:silverfish",
+        "minecraft:tadpole",
+        "minecraft:tropical_fish",
+        "minecraft:turtle",
+        "minecraft:vex"
+    ]
+}

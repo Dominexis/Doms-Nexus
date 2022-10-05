@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "damage": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:bat",
+                    "nbt": "{Tags:[\"nexus.launch.pre\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nexus:player/launch/pre/main"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "chest": {
+                "count": {
+                    "min": 1
+                },
+                "enchantments": [
+                    {
+                        "enchantment": "protection",
+                        "levels": {
+                            "min": 4
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
