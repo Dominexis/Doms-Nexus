@@ -39,7 +39,9 @@ If you like what I do with the Nexus, consider donating at my Patreon: https://w
 Certain features of the Dom's Nexus library were inspired by the work of others.
 
 Player launch system, inspired by BigPapi's "Delta" library: https://github.com/BigPapi13/Delta
+
 Database Library, inspired by rx's PlayerDB: https://github.com/rx-modules/PlayerDB
+
 Event ID system, inspired by nphhpn's data pack: https://discord.com/channels/154777837382008833/157097006500806656/809831906266054686
 
 # Beta Release
