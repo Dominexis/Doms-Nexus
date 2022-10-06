@@ -12,7 +12,7 @@ Modules are special data packs which hook into the Nexus via various function ta
 The Template Module implements various random mechanics for the purposes of showcasing how to use the Nexus. The current version implements four entities and one object. The four entities are a skull mob, a physics-based soccer ball, a car, and the spider brain. The one object is a basic sphere generator. The attached resource pack contains the relevant assets used by the module.
 https://github.com/Dominexis/Template-Module
 
-The External Time Measurer makes the lag manager compatible with data packs that are not hooked into the Nexus. It works by having the Nexus be first enabled at the External Time Measurer be last enabled.
+The External Time Measurer makes the lag manager compatible with data packs that are not hooked into the Nexus. It works by having the Nexus be first enabled and the External Time Measurer be last enabled.
 https://github.com/Dominexis/External-Time-Measurer
 
 The Database Library adds an NBT storage database system commonly used for inventory save states and player-specific NBT.
@@ -23,6 +23,9 @@ https://github.com/Dominexis/Function-Tree-Library
 
 The Resource Pack Merger is used to merge several resource packs into one for use with the Dom's Nexus module collection. It is not itself a module but is useful to use alongside them.
 https://github.com/Dominexis/Resource-Pack-Merger
+
+The Module Manager is used to create blank template modules for Dom's Nexus, and can also update the version numbers of existing modules.
+https://github.com/Dominexis/Module-Manager
 
 # Terms of Use
 These are the terms of use for using Dom's Nexus and the official modules for development. Any restrictions posed by these terms supersede freedoms granted by the attached license.
