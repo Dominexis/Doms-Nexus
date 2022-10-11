@@ -103,22 +103,3 @@ function #nexus:player/main
 # Remove target tag
 
 tag @s remove nexus.player.target
-
-
-
-
-
-
-
-# Launch test
-
-#execute if entity @s[tag=post_launch] run tellraw @s ["Motion: ",{"nbt":"Motion[1]","entity":"@s"}]
-tag @s remove post_launch
-
-#tag @s add launch_gimbal
-execute if entity @s[tag=launch_vector] run function nexus:player/launch/apply/vector
-execute if entity @s[tag=launch_gimbal] run function nexus:player/launch/apply/gimbal
-tag @s[tag=launch_vector] add post_launch
-tag @s[tag=launch_gimbal] add post_launch
-tag @s remove launch_vector
-tag @s remove launch_gimbal
