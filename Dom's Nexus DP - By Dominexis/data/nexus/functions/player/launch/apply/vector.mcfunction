@@ -28,4 +28,4 @@ execute if score #horizontal_magnitude nexus.value matches 0 run scoreboard play
 
 # Perform launch
 
-function nexus:player/launch/main
+execute at @s run function nexus:player/launch/main

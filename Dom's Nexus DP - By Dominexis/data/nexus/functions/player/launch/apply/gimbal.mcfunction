@@ -24,4 +24,4 @@ scoreboard players operation #horizontal_z nexus.value = #output_vector_z nexus.
 
 # Perform launch
 
-function nexus:player/launch/main
+execute at @s run function nexus:player/launch/main

@@ -1,5 +1,6 @@
 # Manage gamemode
 
+gamemode survival @s
 gamemode survival @s[ scores={nexus.gamemode=0}]
 gamemode creative @s[ scores={nexus.gamemode=1}]
 gamemode adventure @s[scores={nexus.gamemode=2}]
