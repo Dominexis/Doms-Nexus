@@ -1,21 +1,70 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "equipment": {
-            "feet": {
-                "count": {
-                    "min": 1
-                },
-                "enchantments": [
-                    {
-                        "enchantment": "protection",
-                        "levels": {
-                            "min": 4
-                        }
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": {
+                                    "min": 4,
+                                    "max": 7
+                                }
+                            }
+                        ]
                     }
-                ]
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": {
+                                    "min": 12,
+                                    "max": 15
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": {
+                                    "min": 20
+                                }
+                            }
+                        ]
+                    }
+                }
             }
         }
-    }
+    ]
 }

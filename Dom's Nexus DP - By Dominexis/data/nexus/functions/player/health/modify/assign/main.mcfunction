@@ -1,22 +1,6 @@
 # Modify goal health if damaged
 
-scoreboard players set @s nexus.hp_buffer 6000
-
-function nexus:player/generic/resistance
-scoreboard players operation #resistance nexus.value = @s nexus.resistance
-scoreboard players operation #resistance nexus.value *= #-1 nexus.value
-scoreboard players add #resistance nexus.value 4
-scoreboard players operation @s nexus.hp_buffer *= #resistance nexus.value
-scoreboard players operation @s nexus.hp_buffer /= #5 nexus.value
-
-function nexus:player/generic/protection
-scoreboard players operation #protection nexus.value = @s nexus.protection
-scoreboard players operation #protection nexus.value *= #-1 nexus.value
-scoreboard players add #protection nexus.value 25
-scoreboard players operation @s nexus.hp_buffer *= #protection nexus.value
-scoreboard players operation @s nexus.hp_buffer /= #25 nexus.value
-
-execute if entity @s[tag=nexus.player.damage] run scoreboard players operation #goal_health nexus.value += @s nexus.hp_buffer
+execute if entity @s[tag=nexus.player.damage] run function nexus:player/health/modify/assign/buffer
 
 
 

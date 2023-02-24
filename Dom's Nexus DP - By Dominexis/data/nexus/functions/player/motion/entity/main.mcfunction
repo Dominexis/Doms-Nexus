@@ -81,7 +81,8 @@ effect give @a[tag=nexus.player.target,limit=1] slow_falling 1 0 true
 scoreboard players set #boolean nexus.value 0
 
 execute if score @s nexus.collide matches 1 run scoreboard players set #boolean nexus.value 1
-execute if score @s nexus.y matches ..-96000 run scoreboard players set #boolean nexus.value 1
+function nexus:entity/generic/void_check
+execute if score #void_boolean nexus.value matches 1 run scoreboard players set #boolean nexus.value 1
 execute if score @s nexus.mot_x matches -5..5 if score @s nexus.mot_y matches -5..5 if score @s nexus.mot_z matches -5..5 run scoreboard players set #boolean nexus.value 1
 execute unless entity @a[tag=nexus.player.target,limit=1] run scoreboard players set #boolean nexus.value 1
 

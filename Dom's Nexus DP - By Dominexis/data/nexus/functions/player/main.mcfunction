@@ -61,6 +61,7 @@ execute if score #feature_player_health nexus.value matches 1 run function nexus
 
 # Respawn functionality
 
+execute if score #feature_player_respawn nexus.value matches 1 run scoreboard players add @s[scores={nexus.death=1..}] nexus.death 1
 execute if score #feature_player_respawn nexus.value matches 1 if score @s nexus.death matches 1.. if entity @e[type=player,distance=..1,tag=nexus.player.target,limit=1] run function nexus:player/respawn
 
 

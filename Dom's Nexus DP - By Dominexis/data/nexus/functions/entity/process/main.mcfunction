@@ -58,7 +58,7 @@ execute if data storage nexus:data {tag:{Item:{tag:{nexus:{no_drop:1b}}}}} run k
 
 # Assign team if a vehicle
 
-execute if score #feature_vehicle nexus.value matches 1 run team join nexus.vehicle @e[type=#nexus:generic/vehicle,tag=nexus.entity.vehicle]
+execute if score #feature_vehicle nexus.value matches 1 run team join nexus.vehicle @s[type=#nexus:generic/vehicle,tag=nexus.entity.vehicle]
 
 
 

@@ -1,21 +1,115 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "equipment": {
-            "feet": {
-                "count": {
-                    "min": 1
-                },
-                "enchantments": [
-                    {
-                        "enchantment": "protection",
-                        "levels": {
-                            "min": 2
-                        }
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": {
+                                    "min": 2,
+                                    "max": 3
+                                }
+                            }
+                        ]
                     }
-                ]
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": {
+                                    "min": 6,
+                                    "max": 7
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": {
+                                    "min": 10,
+                                    "max": 11
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": {
+                                    "min": 14,
+                                    "max": 15
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "feet": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": {
+                                    "min": 18,
+                                    "max": 19
+                                }
+                            }
+                        ]
+                    }
+                }
             }
         }
-    }
+    ]
 }

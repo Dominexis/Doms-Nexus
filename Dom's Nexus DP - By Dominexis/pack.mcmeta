@@ -1,6 +1,14 @@
 {
 	"pack": {
 		"pack_format": 10,
-		"description": "§9§lDom's Nexus\n§7By §9Dominexis §7- §61.10.4"
+		"description": [
+            "",
+            { "text": "Dom's Nexus", "color": "blue", "bold": true },
+            "\n",
+            { "text": "By ", "color": "gray" },
+            { "text": "Dominexis", "color": "blue" },
+            { "text": " - ", "color": "gray" },
+            { "text": "2.0.0", "color": "gold" }
+        ]
 	}
 }

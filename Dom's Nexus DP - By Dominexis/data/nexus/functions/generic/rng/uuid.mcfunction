@@ -10,7 +10,7 @@ summon marker ~ ~ ~ {Tags:["nexus.entity","nexus.entity.target.rng"]}
 
 # Extract UUID
 
-execute store result score #output nexus.value run data get entity @e[type=marker,tag=nexus.entity.target.rng,limit=1] UUID[0]
+execute store result score #output nexus.value run data get entity @e[type=marker,distance=..1,tag=nexus.entity.target.rng,limit=1] UUID[0]
 
 
 
@@ -30,4 +30,4 @@ execute if score #input nexus.value matches 1.. run scoreboard players operation
 
 # Terminate entity
 
-kill @e[type=marker,tag=nexus.entity.target.rng,limit=1]
+kill @e[type=marker,distance=..1,tag=nexus.entity.target.rng,limit=1]

@@ -1,13 +1,40 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "effects": {
-            "resistance": {
-                "amplifier": {
-                    "min": 1
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "resistance": {
+                        "amplifier": 1
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "resistance": {
+                        "amplifier": 3
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "resistance": {
+                        "amplifier": {
+                            "min": 5
+                        }
+                    }
                 }
             }
         }
-    }
+    ]
 }

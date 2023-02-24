@@ -26,7 +26,7 @@ execute as @a[tag=nexus.player.launch.gamemode] run function nexus:player/launch
 
 # Manage entities
 
-execute as @e[type=#nexus:family/mob,tag=nexus.entity.launch.invulnerable,distance=..16] run function nexus:player/launch/post/entity
+execute as @e[type=#nexus:family/mob,distance=..16,tag=nexus.entity.launch.invulnerable] run function nexus:player/launch/post/entity
 
 
 

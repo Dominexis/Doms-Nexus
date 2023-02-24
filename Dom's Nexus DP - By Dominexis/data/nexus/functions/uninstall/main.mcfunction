@@ -61,7 +61,10 @@ scoreboard objectives remove nexus.priority
 scoreboard objectives remove nexus.mot_ticks
 scoreboard objectives remove nexus.gamemode
 scoreboard objectives remove nexus.invulnerable
+scoreboard objectives remove nexus.stored_invulnerable
 scoreboard objectives remove nexus.stop_launch_sound
+scoreboard objectives remove nexus.use_shield
+scoreboard objectives remove nexus.attack_cooldown
 
 scoreboard objectives remove nexus.mode
 scoreboard objectives remove nexus.animation
@@ -72,7 +75,6 @@ scoreboard objectives remove nexus.heal
 scoreboard objectives remove nexus.source
 scoreboard objectives remove nexus.hp_time
 scoreboard objectives remove nexus.hp_offset
-scoreboard objectives remove nexus.hp_buffer
 scoreboard objectives remove nexus.resistance
 scoreboard objectives remove nexus.protection
 
@@ -285,6 +287,7 @@ gamerule showDeathMessages true
 # Remove teams
 
 team remove nexus.vehicle
+team remove nexus.no_collision
 
 
 
@@ -328,3 +331,4 @@ execute as @a run function nexus:uninstall/tag/player
 # Clear storage
 
 data remove storage nexus:data tag
+data remove storage nexus:data modules

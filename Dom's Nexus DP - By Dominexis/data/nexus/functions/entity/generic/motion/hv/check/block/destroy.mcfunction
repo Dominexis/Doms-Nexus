@@ -3,7 +3,7 @@
 scoreboard players set #input nexus.value 1000
 function nexus:generic/rng/lcg
 execute if score #output nexus.value <= #block_destroy_probability nexus.value run setblock ~ ~ ~ air destroy
-execute if score #output nexus.value <= #block_destroy_probability nexus.value run kill @e[type=item,distance=..1,sort=nearest,limit=1]
+execute if score #output nexus.value <= #block_destroy_probability nexus.value unless score #block_destroy_drop_boolean nexus.value matches 1 run kill @e[type=item,distance=..1,sort=nearest,limit=1]
 execute if score #output nexus.value > #block_destroy_probability nexus.value run setblock ~ ~ ~ air
 
 

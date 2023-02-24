@@ -5,7 +5,8 @@
         "effects": {
             "resistance": {
                 "amplifier": {
-                    "min": 2
+                    "min": 2,
+                    "max": 3
                 }
             }
         }

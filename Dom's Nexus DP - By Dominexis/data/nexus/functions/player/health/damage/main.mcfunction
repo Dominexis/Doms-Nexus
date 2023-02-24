@@ -13,7 +13,7 @@ execute store result score #armor_toughness nexus.value run attribute @s generic
 # Reduce damage with armor
 
 scoreboard players operation #damage nexus.value = #damage_amount nexus.value
-execute if score #damage_armor_boolean nexus.value matches 1 run function nexus:player/health/damage/armor
+execute if score #damage_armor_boolean nexus.value matches 1 if score #armor nexus.value matches 1.. run function nexus:player/health/damage/armor
 
 
 
@@ -27,7 +27,7 @@ function nexus:entity/generic/stats/resistance
 
 scoreboard players operation #resistance nexus.value = @s nexus.resistance
 scoreboard players operation #resistance nexus.value *= #-1 nexus.value
-scoreboard players add #resistance nexus.value 4
+scoreboard players add #resistance nexus.value 5
 
 scoreboard players operation #damage nexus.value *= #resistance nexus.value
 scoreboard players operation #damage nexus.value /= #5 nexus.value
@@ -70,6 +70,7 @@ scoreboard players set @s nexus.hp_time 10
 # Give tag to indicate damage
 
 tag @s add nexus.player.damage
+tag @s add nexus.player.health_modify
 
 
 

@@ -16,7 +16,7 @@ data modify storage nexus:data tag set from entity @s {}
 execute store result score @s nexus.mot_x run data get storage nexus:data tag.Motion[0] 1000
 execute store result score @s nexus.mot_y run data get storage nexus:data tag.Motion[1] 1000
 execute store result score @s nexus.mot_z run data get storage nexus:data tag.Motion[2] 1000
-execute store result score @s nexus.invulnerable run data get storage nexus:data tag.Invulnerable
+execute store result score @s nexus.stored_invulnerable run data get storage nexus:data tag.Invulnerable
 
 
 

@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "items": [
+                    "minecraft:wooden_pickaxe"
+                ],
+                "count": {
+                    "min": 1
+                }
+            }
+        }
+    }
+}

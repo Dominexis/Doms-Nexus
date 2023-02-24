@@ -26,3 +26,13 @@ scoreboard players operation @s nexus.hp_offset += #math_00 nexus.value
 # Manage values
 
 scoreboard players set @s nexus.hp_time 10
+
+
+
+
+
+
+
+# Add tag to indicate that health was modified
+
+tag @s add nexus.player.health_modify

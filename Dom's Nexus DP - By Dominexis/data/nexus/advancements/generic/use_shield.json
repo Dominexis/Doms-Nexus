@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "use_shield": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "count": {
+                        "min": 1
+                    },
+                    "items": [
+                        "minecraft:shield"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "nexus:player/shield/use"
+    }
+}

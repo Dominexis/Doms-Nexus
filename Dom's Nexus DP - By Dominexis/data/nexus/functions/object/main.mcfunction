@@ -33,6 +33,7 @@ scoreboard players operation #previous_object_count nexus.value = #object_count 
 # Update world border time manager
 
 execute store result score #world_border_diameter nexus.value run worldborder get
+execute unless score #world_border_diameter nexus.value matches 59900000..59999000 run scoreboard players set #world_border_tamper_boolean nexus.value 1
 
 scoreboard players operation #object_tick_time nexus.value = #world_border_diameter nexus.value
 scoreboard players operation #object_tick_time nexus.value -= #tick_time nexus.value

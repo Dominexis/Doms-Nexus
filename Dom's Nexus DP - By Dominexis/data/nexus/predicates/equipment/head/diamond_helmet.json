@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "head": {
+                "items": [
+                    "minecraft:diamond_helmet"
+                ],
+                "count": {
+                    "min": 1
+                }
+            }
+        }
+    }
+}

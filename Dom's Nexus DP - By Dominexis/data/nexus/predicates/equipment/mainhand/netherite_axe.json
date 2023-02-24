@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": [
+                    "minecraft:netherite_axe"
+                ],
+                "count": {
+                    "min": 1
+                }
+            }
+        }
+    }
+}

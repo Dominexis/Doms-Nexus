@@ -20,4 +20,4 @@ effect give @s instant_damage 1 124 true
 
 # Reset gamerule
 
-scoreboard players set #death_messages_timer nexus.value 3
+scoreboard players set #death_messages_timer nexus.value 4

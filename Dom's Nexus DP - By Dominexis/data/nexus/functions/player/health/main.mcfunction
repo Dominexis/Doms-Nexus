@@ -26,5 +26,6 @@ scoreboard players remove @s[scores={nexus.hp_time=1..}] nexus.hp_time 1
 
 # Health management
 
+execute if entity @s[tag=nexus.player.death_check  ] run function nexus:player/health/modify/death_check
 execute if entity @s[tag=nexus.player.resync_health] run function nexus:player/health/modify/resync
-execute unless score @s nexus.hp_offset matches 0 run function nexus:player/health/modify/main
+execute if entity @s[tag=nexus.player.health_modify] run function nexus:player/health/modify/main

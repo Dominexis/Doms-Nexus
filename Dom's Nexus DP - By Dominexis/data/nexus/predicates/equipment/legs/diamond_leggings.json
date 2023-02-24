@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "legs": {
+                "items": [
+                    "minecraft:diamond_leggings"
+                ],
+                "count": {
+                    "min": 1
+                }
+            }
+        }
+    }
+}

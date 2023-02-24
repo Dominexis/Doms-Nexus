@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "head": {
+                "items": [
+                    "minecraft:netherite_helmet"
+                ],
+                "count": {
+                    "min": 1
+                }
+            }
+        }
+    }
+}

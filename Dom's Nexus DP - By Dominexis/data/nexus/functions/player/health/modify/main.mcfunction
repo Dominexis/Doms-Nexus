@@ -46,3 +46,4 @@ scoreboard players set @s nexus.hp_offset 0
 # Add tag for resynchronization
 
 tag @s add nexus.player.resync_health
+tag @s remove nexus.player.health_modify

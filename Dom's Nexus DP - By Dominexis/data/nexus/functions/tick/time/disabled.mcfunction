@@ -38,13 +38,28 @@ execute if score #feature_custom_entity_ticking nexus.value matches 1 as @e[type
 
 
 
+# Chunk functionality
+
+execute if score #feature_chunk_processing nexus.value matches 0 if score #total_chunk_entities chunk.value matches 1.. at @e[type=marker,tag=chunk.marker] run forceload remove ~ ~
+execute if score #feature_chunk_processing nexus.value matches 0 if score #total_chunk_entities chunk.value matches 1.. run kill @e[type=marker,tag=chunk.marker]
+execute if score #feature_chunk_processing nexus.value matches 0 run scoreboard players set #overworld_chunk_entities chunk.value 0
+execute if score #feature_chunk_processing nexus.value matches 0 run scoreboard players set #the_nether_chunk_entities chunk.value 0
+execute if score #feature_chunk_processing nexus.value matches 0 run scoreboard players set #the_end_chunk_entities chunk.value 0
+execute if score #feature_chunk_processing nexus.value matches 0 run scoreboard players set #total_chunk_entities chunk.value 0
+
+
+
+
+
+
+
 # Set difficulty according to minimum difficulty
 
 execute store result score #current_difficulty nexus.value run difficulty
-execute if score #minimum_difficulty nexus.value matches 0 if score #current_difficulty nexus.value < #minimum_difficulty nexus.value run difficulty peaceful
-execute if score #minimum_difficulty nexus.value matches 1 if score #current_difficulty nexus.value < #minimum_difficulty nexus.value run difficulty easy
-execute if score #minimum_difficulty nexus.value matches 2 if score #current_difficulty nexus.value < #minimum_difficulty nexus.value run difficulty normal
-execute if score #minimum_difficulty nexus.value matches 3 if score #current_difficulty nexus.value < #minimum_difficulty nexus.value run difficulty hard
+execute if score #feature_minimum_difficulty nexus.value matches 0 if score #current_difficulty nexus.value < #feature_minimum_difficulty nexus.value run difficulty peaceful
+execute if score #feature_minimum_difficulty nexus.value matches 1 if score #current_difficulty nexus.value < #feature_minimum_difficulty nexus.value run difficulty easy
+execute if score #feature_minimum_difficulty nexus.value matches 2 if score #current_difficulty nexus.value < #feature_minimum_difficulty nexus.value run difficulty normal
+execute if score #feature_minimum_difficulty nexus.value matches 3 if score #current_difficulty nexus.value < #feature_minimum_difficulty nexus.value run difficulty hard
 
 
 

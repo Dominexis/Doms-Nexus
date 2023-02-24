@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "items": [
+                    "minecraft:diamond_axe"
+                ],
+                "count": {
+                    "min": 1
+                }
+            }
+        }
+    }
+}

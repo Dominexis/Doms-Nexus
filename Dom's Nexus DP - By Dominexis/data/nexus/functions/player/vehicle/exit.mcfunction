@@ -13,7 +13,7 @@ team leave @s[team=nexus.vehicle]
 
 scoreboard players operation #local nexus.id = @s nexus.vehicle
 scoreboard players operation #local nexus.seat = @s nexus.seat
-execute as @e[type=#nexus:generic/vehicle,distance=..16,tag=nexus.entity.vehicle] if score @s nexus.id = #local nexus.id if score @s nexus.seat = #local nexus.seat run effect clear @s luck
+execute as @e[type=#nexus:generic/vehicle,tag=nexus.entity.vehicle] if score @s nexus.id = #local nexus.id if score @s nexus.seat = #local nexus.seat run effect clear @s luck
 
 
 

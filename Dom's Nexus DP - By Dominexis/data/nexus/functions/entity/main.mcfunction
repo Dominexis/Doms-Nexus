@@ -19,6 +19,7 @@ scoreboard players operation #entity_tick_time_limit nexus.value += #tick_time n
 
 # Tick unconditional entities
 
+scoreboard players set #missed_ticks nexus.value 1
 execute if score #feature_unconditional_entity_ticking nexus.value matches 1 as @e[type=#nexus:generic/system,tag=nexus.entity.ticking.unconditional] at @s run function nexus:entity/activate/tick/main
 
 

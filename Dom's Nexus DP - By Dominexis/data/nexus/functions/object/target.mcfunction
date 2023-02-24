@@ -13,7 +13,9 @@ scoreboard players set #active_object_finished_boolean nexus.value 0
 
 scoreboard players set #active_object_priority nexus.value -2147483648
 scoreboard players operation #active_object_priority nexus.value > @e[type=marker,tag=nexus.object] nexus.priority
-execute as @e[type=marker,tag=nexus.object,sort=random] if score @s nexus.priority = #active_object_priority nexus.value run scoreboard players operation #active_object_id nexus.value = @s nexus.id
+execute as @e[type=marker,tag=nexus.object] if score @s nexus.priority = #active_object_priority nexus.value run tag @s add nexus.priority
+scoreboard players operation #active_object_id nexus.value = @e[type=marker,tag=nexus.object,tag=nexus.priority,limit=1] nexus.id
+tag @e[type=marker,tag=nexus.object] remove nexus.priority
 
 
 

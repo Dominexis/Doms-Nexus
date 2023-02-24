@@ -1,0 +1,13 @@
+{
+    "function": "set_damage",
+    "add": true,
+    "damage": {
+        "type": "score",
+        "target": {
+            "type": "fixed",
+            "name": "#durability_modifier"
+        },
+        "score": "nexus.value",
+        "scale": 0.004761904761904762
+    }
+}

@@ -38,4 +38,5 @@ execute store result score @s nexus.mot_y run data get storage nexus:data tag.Mo
 execute store result score @s nexus.mot_z run data get storage nexus:data tag.Motion[2] 1000
 execute store result score @s nexus.yaw run data get storage nexus:data tag.Rotation[0] 10
 execute store result score @s nexus.pitch run data get storage nexus:data tag.Rotation[1] 10
+execute store result score @s nexus.invulnerable run data get storage nexus:data tag.Invulnerable
 execute unless entity @s[type=!player,type=!#nexus:family/mob] store result score @s nexus.health run data get storage nexus:data tag.Health 1000

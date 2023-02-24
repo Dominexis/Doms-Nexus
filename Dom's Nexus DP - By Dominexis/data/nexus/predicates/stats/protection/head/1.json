@@ -1,21 +1,195 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "equipment": {
-            "head": {
-                "count": {
-                    "min": 1
-                },
-                "enchantments": [
-                    {
-                        "enchantment": "protection",
-                        "levels": {
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
                             "min": 1
-                        }
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 1
+                            }
+                        ]
                     }
-                ]
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 3
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 5
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 7
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 9
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 11
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 13
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 15
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 17
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {
+                        "count": {
+                            "min": 1
+                        },
+                        "enchantments": [
+                            {
+                                "enchantment": "protection",
+                                "levels": 19
+                            }
+                        ]
+                    }
+                }
             }
         }
-    }
+    ]
 }

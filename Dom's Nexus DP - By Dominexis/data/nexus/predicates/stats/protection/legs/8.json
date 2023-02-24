@@ -11,7 +11,8 @@
                     {
                         "enchantment": "protection",
                         "levels": {
-                            "min": 8
+                            "min": 8,
+                            "max": 15
                         }
                     }
                 ]

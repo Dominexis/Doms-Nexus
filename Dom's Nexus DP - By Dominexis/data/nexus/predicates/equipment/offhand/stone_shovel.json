@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "items": [
+                    "minecraft:stone_shovel"
+                ],
+                "count": {
+                    "min": 1
+                }
+            }
+        }
+    }
+}

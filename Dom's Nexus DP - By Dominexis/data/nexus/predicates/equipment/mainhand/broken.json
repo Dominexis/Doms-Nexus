@@ -1,0 +1,14 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "count": {
+                    "min": 1
+                },
+                "durability": 0
+            }
+        }
+    }
+}

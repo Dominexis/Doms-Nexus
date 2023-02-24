@@ -1,3 +1,21 @@
+# Modify the durability of armor
+
+scoreboard players operation #durability_modifier nexus.value = #damage_amount nexus.value
+scoreboard players operation #durability_modifier nexus.value /= #4000 nexus.value
+execute if score #durability_modifier nexus.value matches 0 run scoreboard players set #durability_modifier nexus.value 1
+scoreboard players operation #durability_modifier nexus.value *= #-1 nexus.value
+
+function nexus:player/durability/head
+execute unless predicate nexus:equipment/chest/elytra run function nexus:player/durability/chest
+function nexus:player/durability/legs
+function nexus:player/durability/feet
+
+
+
+
+
+
+
 # Modify damage value with armor
 
 scoreboard players operation #math_00 nexus.value = #armor nexus.value
