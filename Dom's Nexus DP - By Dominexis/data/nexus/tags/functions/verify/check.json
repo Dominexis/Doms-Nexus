@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "nexus:verify/2_0_1/check"
+        "nexus:verify/2_0_2/check"
     ]
 }

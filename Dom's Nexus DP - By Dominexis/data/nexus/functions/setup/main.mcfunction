@@ -479,7 +479,7 @@ function #nexus:setup/main
 
 
 
-# Adjust feature booleans for dependencies
+# Adjust features for dependencies
 
 execute if score #feature_player_health nexus.value matches 1 run scoreboard players set #feature_player_respawn nexus.value 1
 execute if score #feature_player_motion nexus.value matches 1 run scoreboard players set #feature_player_respawn nexus.value 1

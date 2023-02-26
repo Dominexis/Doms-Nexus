@@ -53,9 +53,17 @@ execute if score #motion_missed_ticks_boolean nexus.value matches 1 run scoreboa
 execute if score #motion_missed_ticks_boolean nexus.value matches 1 run scoreboard players operation #motion_limit_y nexus.value *= #missed_ticks nexus.value
 execute if score #motion_missed_ticks_boolean nexus.value matches 1 run scoreboard players operation #motion_limit_z nexus.value *= #missed_ticks nexus.value
 
-execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_x nexus.value < #motion_limit nexus.value
-execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_y nexus.value < #motion_limit nexus.value
-execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_z nexus.value < #motion_limit nexus.value
+scoreboard players operation #motion_limit_maximum nexus.value = #motion_limit nexus.value
+scoreboard players operation #motion_limit_maximum nexus.value > #motion_limit_x nexus.value
+scoreboard players operation #motion_limit_maximum nexus.value > #motion_limit_y nexus.value
+scoreboard players operation #motion_limit_maximum nexus.value > #motion_limit_z nexus.value
+
+execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_x nexus.value *= #motion_limit nexus.value
+execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_y nexus.value *= #motion_limit nexus.value
+execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_z nexus.value *= #motion_limit nexus.value
+execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_x nexus.value /= #motion_limit_maximum nexus.value
+execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_y nexus.value /= #motion_limit_maximum nexus.value
+execute if score #motion_limit nexus.value matches 1.. run scoreboard players operation #motion_limit_z nexus.value /= #motion_limit_maximum nexus.value
 
 
 
