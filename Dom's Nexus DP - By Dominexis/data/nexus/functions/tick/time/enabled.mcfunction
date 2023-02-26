@@ -213,7 +213,7 @@ execute if score #generic_tick_time nexus.value = #generic_tick_time nexus.value
 execute if score #external_tick_time nexus.value = #external_tick_time nexus.value unless score #external_tick_time nexus.value matches 0..99000 run scoreboard players set #world_border_tamper_boolean nexus.value 1
 execute if score #world_tick_time nexus.value = #world_tick_time nexus.value unless score #world_tick_time nexus.value matches 0..99000 run scoreboard players set #world_border_tamper_boolean nexus.value 1
 
-execute if score #skip_world_border_tamper_notice nexus.value matches 0 if score #world_border_tamper_boolean nexus.value matches 1 run tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"Error: ","color":"dark_red"},{"text":"The world border, used to manage MSPT, has been tampered with. Reverting back to expected value.","color":"red"}]
+execute if score #skip_world_border_tamper_notice nexus.value matches 0 if score #world_border_tamper_boolean nexus.value matches 1 run tellraw @a ["",{"text":"[","color":"red"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"red"}," ",{"text":"Error: ","color":"dark_red"},{"text":"The world border, used to manage MSPT, has been tampered with. Reverting back to expected value.","color":"red"}]
 execute if score #skip_world_border_tamper_notice nexus.value matches 0 if score #world_border_tamper_boolean nexus.value matches 1 run function nexus:generic/tick_time/reset
 execute if score #skip_world_border_tamper_notice nexus.value matches 0 if score #world_border_tamper_boolean nexus.value matches 1 run scoreboard players set #tick_time nexus.value 59900000
 

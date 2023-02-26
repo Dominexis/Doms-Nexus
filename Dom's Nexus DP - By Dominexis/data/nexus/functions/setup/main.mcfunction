@@ -515,5 +515,5 @@ execute if score #feature_minimum_difficulty nexus.value matches 3 if score #cur
 scoreboard players set #doms_nexus_ticking_function nexus.value 0
 function #minecraft:tick
 
-execute if score #doms_nexus_ticking_function nexus.value matches 0 run tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"Error: ","color":"dark_red"},{"text":"Function tag ","color":"red"},{"text":"#minecraft:tick","color":"gold"},{"text":" didn't load properly. Disable the installed data pack that interferes with the function tag.","color":"red"}]
+execute if score #doms_nexus_ticking_function nexus.value matches 0 run tellraw @a ["",{"text":"[","color":"red"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"red"}," ",{"text":"Error: ","color":"dark_red"},{"text":"Function tag ","color":"red"},{"text":"#minecraft:tick","color":"gold"},{"text":" didn't load properly. Disable the installed data pack that interferes with the function tag.","color":"red"}]
 execute if score #doms_nexus_ticking_function nexus.value matches 1 run scoreboard players add #global nexus.ticks 1

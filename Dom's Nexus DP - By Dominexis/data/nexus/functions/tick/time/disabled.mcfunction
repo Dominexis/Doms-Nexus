@@ -89,7 +89,7 @@ execute as @a run function nexus:player/reset_scores
 
 # Display debug things
 
-execute if score #debug_tick_time_display nexus.value matches 1 run tellraw @a ["",{"text":"[","color":"gray"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"gray"}," ",{"text":"Error: ","color":"dark_red"},{"text":"Tick time display cannot be enabled with time manager disabled.","color":"red"}]
+execute if score #debug_tick_time_display nexus.value matches 1 run tellraw @a ["",{"text":"[","color":"red"},{"text":"Dom's Nexus","color":"blue"},{"text":"]","color":"red"}," ",{"text":"Error: ","color":"dark_red"},{"text":"Tick time display cannot be enabled with time manager disabled.","color":"red"}]
 scoreboard players set #debug_tick_time_display nexus.value 0
 execute if score #debug_loaded_entity_display nexus.value matches 1 run function nexus:debug/loaded_entity_display/display
 
